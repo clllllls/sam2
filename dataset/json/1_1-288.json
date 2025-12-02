@@ -1,0 +1,147 @@
+{
+  "image": "1_1-288.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[Q?8g=[2XM`MZEl4_9a1N2O10000000001O00000000001OO10000000000000001O1O000001O1O001OO1000000O100O1O1O11O1O1O2N2N000000jNWGlJj8R5ZGkJg8T5\\GiJe8R5[1ESEVKR;T2oD\\O=]NF5V;o1mDPNL?1]OK3_<n1aDUNm;j1Y1O2N100O1N2G9O1O1O2C^AROb>k0cARO_>l0?O2M2N3M3J5L4M3O1O1MWb_6"
+      },
+      "area": 12404.0,
+      "bbox": [
+        29.0,
+        124.0,
+        82.0,
+        217.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Q_h69o?2M2N2O2M3N2N2M2N2O2N2M3M5K3N2M3XFfN]4]1_KfN_4]1\\KgNb4]1YKfNg4[1SKjNl4Z1nJiNR5X1iJkNW5X1cJlN^5T1\\JQOd5S1RJROo5Q1kIROU6R1aISO`6n0ZIVOh6n0kHYOW7n0YHYOh7n0iGZOW8P1SG[On8o31O0001O0000000000000010O001O00001O000001O001O00000000O2N2N2kNT1eM\\2fMhB_O0N9Ng`>"
+      },
+      "area": 8945.0,
+      "bbox": [
+        426.0,
+        133.0,
+        66.0,
+        232.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "UVR3=[?j0]Oc0D<C9H2M3WEiM_7Y2THXNf7j1XH\\Nd7e1YHaNc7_1[HgNa7Y1]HmN_7S1_HRO^7n0`HTO`7m0]HUOc7k0[HWOe7i0YHYOg7g0WH[Oi7e0UH]Ok7c0SH_Om7b0PH@P8`0nGBR8>lGDT8<jGFV8:hGHX89fGHZ88fGHZ88fGHZ88fGG[89eGF\\8;cGE]8;cGD^8<bGC_8=aGC_8=aGB`8?_G@b8`0^G@b8`0]G@d8`0\\G_Oe8a0[G_Oe8a0[G^Of8b0ZG]Og8c0YG]Og8c0YG\\Oi8c0WG]Oi8c0WG\\Oj8d0VG[Ok8e0UG[Ok8e0UGZOm8e0RG[Oo8e0QG[Oo8e0QGZOP9f0PGYOQ9g0oFYOQ9g0oFYOR9f0nFZOR9f0nFZOR9f0nFZOR9f0nFZOR9f0nF[OR9d0mF]OS9c0mF]OS9c0mF]OS9c0mF]OS9c0mF]OS9c0mF^OS9a0mF_OS9`0nF@R9`0nF@R9`0nF@R9`0nF@S9?mFBR9>mFCS9=mFCS9=mFDR9<nFDR9<nFDS9;mFFR9:nFFR9:nFGQ99oFGQ99oFGR98nFIQ97oFIQ97nFJR96mFLR94nFLR94mFMT92kF0T90lF0T90kF2T9NkF3U9MjF4V9LjF5U9KjF6V9JiF7W9IiF8V9HiF9W9GhF:X9FgF<X9DhF<X9DgF>X9EdF<\\9J^F6b90WF2h9V3100000000O100000000O1000000O100000000O100000000O1000O11O0O1O1O101N1O1O1O101N\\GZJh6e5WIcJd6[5\\IfJd6Y5[IiJf6U5ZIlJf6T5XInJi6P5WIQKi6n4WISKj6k4UIWKk6h4UIYKl6f4RI[Ko6d4QI]KP7a4oH`KR7_4nHbKS7\\4mHdKU7Z4kHgKU7Y4jHhKW7V4iHjKX7U4hHlKe5SO^Jo4LoKh5VOWJj41QLh5XOUJe43SLi5ZORJb45ULj5ZOPJ`45VLl5\\OmI]47XLl5]OlIY48[Lm5]OiIW4:\\Ln5_OgIT4:^Lo5@eIQ4<_LQ6AbIn3=bLQ6B`Il3>bLS6D^Ih3>eLV6DZIf3`0gLV6EXId3a0gLX6GUIa3c0hLZ6IPI_3e0iL[6MkHY3j0jL\\63dHR3P1kL^67]Hn2S1mL`6f4_IZKb6f4\\I[Kf6d4YI]Ki6a4UI`Km6_4RIaKQ7]4mHeKT7Z4kHfKX7X4fHiK]7U4bHkK`7T4^HnKd7P4ZHQLh7o3UHRLn7m3nGVLS8j3iGXLZ8g3cGZL_8f3]G\\Le8c51N1O2O1N2N2O0O2N2M3N2N1N3N1N2O1N2O001N2O1N2O1O0O2O1N2O1O0O02N3001N101O0O2O1O0O2O001N101M3M4L3M4L4L3L5I7I6J6J6J7H7J6I7J6H:F:E<D;F>Ab0_Oa0_O^gn0"
+      },
+      "area": 48262.0,
+      "bbox": [
+        193.0,
+        119.0,
+        266.0,
+        297.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Xd^63U`0001N10000O01000O1O10O10001O1O002NXY`1"
+      },
+      "area": 86.0,
+      "bbox": [
+        406.0,
+        468.0,
+        18.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^\\g42U`03N001O0001O001O0000001O010O0O`aX3"
+      },
+      "area": 68.0,
+      "bbox": [
+        298.0,
+        61.0,
+        16.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kdW31R`07M1O2N1001N1O][l4"
+      },
+      "area": 72.0,
+      "bbox": [
+        204.0,
+        51.0,
+        8.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lhP67o?4L3N100001O1M3M5KeVR2"
+      },
+      "area": 113.0,
+      "bbox": [
+        379.0,
+        319.0,
+        10.0,
+        15.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

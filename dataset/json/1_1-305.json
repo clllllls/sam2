@@ -1,0 +1,107 @@
+{
+  "image": "1_1-305.bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "fgj13\\<2M3N2N;E2O0O1O2N2N1N2O2N2O1O1O001N2O1O0O101O1N3N1O001O001O1O1O001O00001O001O1O001O1O1N101K5M2HnMQFS2n99N2O000000O1O100000001N3M3M5J4M2N1O10000000GYNiEg1U:\\NjEc1T:`NlE`1T:bNiE_1V:>O010O1O1000O2O001O1O0O101N2N2O1O1O0XN`E`1a:^NaEa1_:^NbEb1^:^NbEa1_:_NaEa1g:01]NTE`1o:O002M101O00001O00000O10000O1000001N1O10O001000O101N3M2M3N1O1O2M2O1O1O2O001N2N2N2M4I5OndY1"
+      },
+      "area": 6944.0,
+      "bbox": [
+        150.0,
+        110.0,
+        143.0,
+        86.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "WQV12[<3N3L4M2O2O1N1O2N00100O1O00100O1O1O1O100O1O2O0O1O100O20O0000000001OO100000000O100O10000O10000000000001OO1N2K5O1O1O1O1N1O3N1O1O100O10000O100O10000O100O100O102M3Nobf2"
+      },
+      "area": 1745.0,
+      "bbox": [
+        97.0,
+        124.0,
+        81.0,
+        35.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "canjiao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "R^m12Z<5L4O2M2N2O0O101N1O101N1000000O1000000O10000O1000001N100000000000O1O1O1N2N2N2N2O1O010000000000000001O0010O01O001O1O2N1O10O00001L3M3N3M3M3N[_S2"
+      },
+      "area": 1391.0,
+      "bbox": [
+        157.0,
+        96.0,
+        70.0,
+        29.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "canjiao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "XS_21]<2N2O100O100O100O100O101OO010000O100O10000O010000O10O010000O00100O1O10O01O1000O100000O01000000O1000000O100oMGkG9S8ImG7Q8LnG4P8NPH2P8OnG2R8OmG1S8OmG1S80lG0T80lG0T81jG0V81iGOW81iGOW81hG1W8OiG1V80iG1W8OiG1V80jG0V80iG1V80jG0V80iG1W8OiG0W82hGNX82gGOX82hGMY84eGMZ84fGK[85eGK[85dGL\\85bGK_85_GM`84_GLc84[GMe83YGOg81XGOj81TG0l80RG1P9OnF2R9NiF7W9JbF;`9D\\F`0e9@VFc0m9[OnEj0S:h02O1N3N1N2O1N2O1N2N2O0O2N2N101N2N2M2O2M4M3M3L4L6I;E`am0"
+      },
+      "area": 3360.0,
+      "bbox": [
+        202.0,
+        102.0,
+        122.0,
+        100.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "UmT1=f;=0000000000000000000000000000000000000000000000000CUj\\3"
+      },
+      "area": 676.0,
+      "bbox": [
+        94.0,
+        184.0,
+        27.0,
+        26.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

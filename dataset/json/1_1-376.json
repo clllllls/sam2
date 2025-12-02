@@ -1,0 +1,147 @@
+{
+  "image": "1_1-376.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Sb>;2j0[<9UD>\\:R1[ESMMk1\\:j1aEWN]:k1bEVN\\:m1cERNZ:P4O001O1O1O1O1K6N2M3N2O1O1O0O2N101N1O2O0O2O0000000O100EVIXGj6h8WIWGl10ZNLo3l8nKVGg1c0YN\\Oe3k8\\LTGc1V1o1e7QNiHm1R7\\LXG`1n1R2j6gMcIiNeMY3g8jMkIkN_MZ3f8aM\\J]2e5]MiJ[2W5cMnJZ2R5eMQKX2P5gMTKV2l4iM\\KP2c4oMaKo1_4nMfKP2Y4nMnKn1Q4PNXLj1i3RN]Lk1Q9O1O1O2N2N2N2N2N2N10001N1O2N1O1O2N3M3M2N1O1O1O1O1N2N3N2L4L4M2N2N2O001O1O1O1O001O2OSWZ6"
+      },
+      "area": 10300.0,
+      "bbox": [
+        28.0,
+        172.0,
+        93.0,
+        242.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hWW13T`02N1O2O1O0O2N1O2O0O10001N100O10O10O1N1N2H9N1010O010O1O0010O01M3M2N30O010O10O001N101O000N200001O001O0O2N101O0001O00O100010O01000O010000000O1000000O1000000O1O1O1N2N3M2O1O100O2N101M`Uc5"
+      },
+      "area": 1755.0,
+      "bbox": [
+        77.0,
+        87.0,
+        90.0,
+        66.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]Xl28U>KaC9P9>jG_OkNIiN?e9W1^G[NUO6M76KM`0`8ZOXGW2P1hMTOU3`8@gG[MOc3W8UOgGbMI\\3^8TOeGb1Z8`NbGc1]8S310000000000000000001O001O000O20O000000000000000001OO101O0000000000000000000000000000000000000000O11O00000000000001O0000001O0O100O101OO1000000000000000001O0001OO100000000000000001OO1000001O10OO100000000O1O10000000000000000000000000O11O1O100N2O1O1O1O0000001O1O1N2M3N2I7L<fMbF`L4YOe9k3\\FoKJ3e;[2XD`M6Nd=i1c0L=D3M8G3N2J6B^@2Ufm2"
+      },
+      "area": 35437.0,
+      "bbox": [
+        181.0,
+        131.0,
+        155.0,
+        253.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "XWQ1b1b>e0[O8H8H9G8H9G8H8H8I5K5K6K4K6J5K5K6K4K6J5L4N3L3N2M3N1N3O0O2N1O2N1O2N1O2N1O1O2N1O2N1O2N1O2N1O2N1O2N1O1O1O1O1O2O0O1O1O1O1O1O1O1O1O1O2N1O1O1O100O1O100O1O101N1O100O1O10O0gM\\HoKc7Q4aHkK`7S4eHjKZ7V4jHgKU7X4oHeKS7Y4PIeKQ7X4RIfKP7X4SIfKn6W4VIfKm6W4VIgKk6V4YIgKi6W4YIhKh6U4\\IhKf6V4^IgKd6V4`IgKb6U4bIhKa6U4bIiK`6S4cIkK_6S4cIlK^6Q4dInK^6P4bIQL_6l3cISL_6k3bIUL^6i3dIWL]6g3cIYL_6b3eI^L\\6[3jIdLX6U3nIkLS6n2RJQMQ6h2UJWMn5a2XJ^Ml5V2\\JjMh5h1cJWNg;01O00001O001O1O10O0100O1O100O00100O1O10O0100O00100O1O10O01O100O2O0O2N2O^]i4"
+      },
+      "area": 24821.0,
+      "bbox": [
+        65.0,
+        152.0,
+        152.0,
+        306.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Y_T41W`00O100O100O2O0O100O100O2O000O100O101OO0100O100000000000000000000000000O11O1M3L4Lih^3"
+      },
+      "area": 380.0,
+      "bbox": [
+        260.0,
+        446.0,
+        41.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`Y`0m0W?:F7K4M0O0101N100O2O0O1N3L3M4N2N2O1O1O1^On@MT?1m@OS?1m@NT?1m@NT?2l@LV?4j@JX?7=O01O0000001O01O00010M2M3NQ_S7"
+      },
+      "area": 1024.0,
+      "bbox": [
+        32.0,
+        29.0,
+        40.0,
+        59.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Vgl63R`031O1O00ciX1"
+      },
+      "area": 22.0,
+      "bbox": [
+        434.0,
+        339.0,
+        5.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

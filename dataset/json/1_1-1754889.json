@@ -1,0 +1,27 @@
+{
+  "image": "1_1-1754889.bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "fVd01^<3M3NO01O1O010O1O01O001O1O001O001O1N1OgWP4"
+      },
+      "area": 119.0,
+      "bbox": [
+        51.0,
+        283.0,
+        20.0,
+        16.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

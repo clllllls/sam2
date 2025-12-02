@@ -1,0 +1,107 @@
+{
+  "image": "1_1-3999998888687 (11).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "niV26Y<4L3N10000O010O02N3L]Ta2"
+      },
+      "area": 133.0,
+      "bbox": [
+        181.0,
+        108.0,
+        11.0,
+        17.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "SX>4]<2M10100OO2N100NU_Z4"
+      },
+      "area": 53.0,
+      "bbox": [
+        36.0,
+        195.0,
+        9.0,
+        13.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "a^k21^<3L3N1O2N1N3N1O2O001O00000O2O00001O0O11O01O00001O00001O0001O100O00101N3M2O4Gnaa1"
+      },
+      "area": 700.0,
+      "bbox": [
+        234.0,
+        37.0,
+        39.0,
+        28.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "]PR31^<2N2O1N2N2N1O10000O100O10000O10000000000O100000O10O10000000000000O101O00000000001O001O1O001O2N1O1O2O0MdmU1"
+      },
+      "area": 640.0,
+      "bbox": [
+        250.0,
+        354.0,
+        52.0,
+        17.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "gg46X<3M3M3M00O3N@FmD8V;LfD2[;2aDN_;5_DJc;`01O1O1BWD4j;NUD0m;OTDOm;1TDMl;472N0100O10O10O1O001O1O1O1O100O1000001O000001O0000001O01O01O0010O00010O0001O010O00010O01O01O010O00010O010O00010O010O1O010O10O01O10O0010O00010O01O01O01O00000010O0001O0000010O0000001O01O010O010O0010O01O010O0010O0100O0010O010O10O10O10O010O10O10O10000O01000O01O10O01O10O01O010O010O0010O01O01O00010O00001O0100O001O0000000000000010O010O0010O010O010O010O01O010O01O010O10O010O01000O100O10000O10100O2O1N2O0O00O2O001N2N4M1N0001O00000000O1000000000OO__j1"
+      },
+      "area": 1726.0,
+      "bbox": [
+        12.0,
+        22.0,
+        238.0,
+        98.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

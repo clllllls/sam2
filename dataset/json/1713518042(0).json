@@ -1,0 +1,27 @@
+{
+  "image": "1713518042(0).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "g[\\24m?8L301O1O1O00E[@4c?M]@4b?L_@3a?M`@3_?Ma@3j>LaA1F3i>KaA2F3i>L_A3H1h>LaA2G3g>LaA1I2f>MaA2H2g>L`A2J3d>KbA3I4c>JcA3J3b>JdA3J5`>IfA2J6_>GhA3J6\\>HjA1L6Z>HkA2L6W>ImA1M6U>HoA1N6R>JPB0O6P>IRB006m=KSBN27j=JTBO38g=JVBM5d0Y=^ObBO5h0S=ZOgBN8i0o<YOiBM9j0m<ZOiBL<h0l<]OeBLa0f0i<_OeBLb0e0i<_OcBLg0c0g<N^COb<OmCDR<;RDBo;<RDEn;9TDGm;6UDJk;4VDMk;0WDOQ>100O100O01000O4M4K3N3M2`A\\OX=h12O2N3M3M3M?A:@URi4"
+      },
+      "area": 2121.0,
+      "bbox": [
+        150.0,
+        167.0,
+        68.0,
+        166.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

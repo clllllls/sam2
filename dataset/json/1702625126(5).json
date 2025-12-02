@@ -1,0 +1,127 @@
+{
+  "image": "1702625126(5).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "][d66Q`07J2M2N3N1N3M2N2O2M2N3M2O2M2N3N2M2N3O1N1O2N2N2N1O2O1N1O2N2N2N4L4L4M3L4L4L4L4L4L4M3L4L4L2N001O000100O100O100N2N2O1N2N2iMZCj0g<oN_CP1c<iNdCU1^<dNhC\\1Y<\\NnCc1T<UNTDi1V=01N2M3L3L5LZc?"
+      },
+      "area": 5206.0,
+      "bbox": [
+        418.0,
+        80.0,
+        71.0,
+        130.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hSc61U`03M3M3M2O2M3M3M3M101N1O2O0O2N1O2O0O2N2O1N2N2N2O2M2N2O1N2N2N3M1N3M3N2M2N3M3M3N2M2N3L4L4K4M4K5LUNWC?d<E^C:^<HeC6V<OkC0o;6SDId:fNfEf1IBc:^1_E`Nc:\\1aEbN`:Z1eEeN\\:V1hEiNZ:Q1lEmNU:o0PFPOQ:k0TFSOn9g0XFWOi9e0\\FYOf9b0_F]Ob9>cF@^9;hFCZ98kFFi9C\\F<i<N3M3N2M3I7FYm?"
+      },
+      "area": 4638.0,
+      "bbox": [
+        415.0,
+        212.0,
+        73.0,
+        180.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Z_U41W`02N1O1O2N1O1O2N1O1N3N1OO1000000000000000O1000000000000000000O1000000O010000O010O1000O010000O01000O10O010000O10O1000000O10001O0O1000000O2OO100O010O1000O0100O10O010O0010O0100O010O0010O001O001O00010O001O001O01O010O010O010O0010O0001O010O001O0010O01O001O101N2N1O2N2N00O1O1O1O10000001O0000000011N2M3M3L4M3M3L4MVnd1"
+      },
+      "area": 2697.0,
+      "bbox": [
+        262.0,
+        380.0,
+        153.0,
+        78.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_Xj15T`05J10000O010O100O10000O10O10O10000O10O10O1000O010000O01000O10O10O1000O010000O10O10O10000O01000O1000O01_@@Y?`0c@C^?d0O10O10O10O0100O01000O010O10O001O1O001O0010O01O1O001O001O01O00000001O0001O000001O00000001O01O0000000000010N1O100O1O1O2O0O1O1O100O2N101N1O1O2O0O_X^4"
+      },
+      "area": 2140.0,
+      "bbox": [
+        114.0,
+        383.0,
+        125.0,
+        74.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kY?^2j=9F4M3L3M3cCZMT;h2bDTNi:o1mDgNf:d3I7J6I5L2M3N2N2M3N2M3N2M3N2M3N2MdL[GXOc8d0]HbN`7[1TIWNj6e1]IZN`6c1gI\\NW6`1PJ_Nn5]1YJbNd5[1cJdN[5X1lJgNQ5W1UKgNj4U1]KhNb4U1eKiNZ4S1mKjNR4S1ULjNk3R1\\LkNd3Q1cLmN[3P1lLmNT3P1QMnNn2P1VMoNj2o0YMQOf2l0^MSOa2k0cMTO]2j0fMUOY2i0kMWOT2g0nMYOQ2e0SNZOm1c0WN\\Oi1b0ZN^Od1`0`N_O`1?cN@\\1>gNCX1:lNET19oNFP18TOFm08VOFj08ZOGf06^OHc06_OIa05CI>5EJ:5II84LJ45OJ14S8M2OgUe6"
+      },
+      "area": 7848.0,
+      "bbox": [
+        30.0,
+        71.0,
+        70.0,
+        297.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "bg\\21V`0000O2O00001O0O101O00001N10001N1O2N2N2N1O2N2N11000000O10000O1000000O10000O10O1000O10000O100O10000O100O1000O010O10O10O010O10O010000O100O100O01000O100O100000O100000000000000O1000O100000000000000000000000000O10000000000000000000001O0000000000000000000000000000000O11O001O010O000010O01O001O010O000010O0000001O000000001O0O10001O000000001O000O1100O001O10O01O1O1O010O1O00100O10O10O10O0100O10O10O10O0100O0100O010O0010O0100O010O010O010O1O010O010O10O010O01O010O10O010O100O10000O10O0100O10000O10000O10000O10O10O10000O10002M4M3Mihg1"
+      },
+      "area": 4285.0,
+      "bbox": [
+        151.0,
+        10.0,
+        259.0,
+        78.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "image": "1731058384(9).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Q`?5S`01O0000001O00001O0000001O0001O0001O00010O001O010O01O0010O0001O001N2N1OhXV7"
+      },
+      "area": 284.0,
+      "bbox": [
+        30.0,
+        273.0,
+        36.0,
+        14.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dfg61W`02N1O2M2O000O110O0000010O0000010O0000010O00000010O0000010O0000010O0000010O0000010O0000010O0001O0001O01O0001O01O0001O01O01O0001O01O00001O00001O0000]h:"
+      },
+      "area": 651.0,
+      "bbox": [
+        424.0,
+        402.0,
+        74.0,
+        24.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kRZ74m?7L4N2N2O1N2N2N2O1N2N2O1N2N2O0O2N2O1N2N2O1N2N2N2O^O^A@`>`0aAA]>?eAAZ>>gACW>=kABT>>mABS>=PBBR>:QBDR>8QBCU>7PBBX>8gh;"
+      },
+      "area": 1264.0,
+      "bbox": [
+        460.0,
+        447.0,
+        36.0,
+        64.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^Q^74Q`07I6K1O2N2N2O0O2N2_MAWEa0e:0mD1o:7kDJS;=gDDZ;a0_D@a;e0YD\\Oh;h0SDYOl;m0mCTOT<P1fCQOZ<T1`CmN`<]21O0010O0n0ROi1WNkZ<"
+      },
+      "area": 1726.0,
+      "bbox": [
+        468.0,
+        281.0,
+        27.0,
+        128.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Qna7U1k>;ROo0F9F9H6L5001N10001N=Cj0VOj0VOj0VOgn="
+      },
+      "area": 1298.0,
+      "bbox": [
+        476.0,
+        167.0,
+        16.0,
+        111.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

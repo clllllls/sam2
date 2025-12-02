@@ -1,0 +1,107 @@
+{
+  "image": "1_1-725.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fh]62W`02N1O2N2N1O2M2O00001O000000001O00000O2O1O1O1O1O1O1O1O1O1O1O1N2O1O1O1O1O1O2O0000002M3N3M2N3L3N3cD\\Nn7f1fGaN]8c1UGdNn8a1bFgN`9`1PFhNR:h1TE_No:[33L4L4K5L4L5J5L4K5L5K4J6J6I8I7H8I7H8I7IiSe0"
+      },
+      "area": 3727.0,
+      "bbox": [
+        405.0,
+        110.0,
+        73.0,
+        217.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "RXd21U`02N3L4K3M3BDn@?S?92O1O3JVX^5"
+      },
+      "area": 173.0,
+      "bbox": [
+        165.0,
+        444.0,
+        11.0,
+        33.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "elm24S`0100O1O1O10001O00001O0O2O001O001O1O000000O100000000O1O1O100O1O1O1O100O1OY\\g4"
+      },
+      "area": 383.0,
+      "bbox": [
+        184.0,
+        464.0,
+        37.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "R]n31V`02N110O1O00010O00000000000010O001O000O3Nbon3"
+      },
+      "area": 90.0,
+      "bbox": [
+        248.0,
+        480.0,
+        21.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`RR34o?500O20N2MVnR5"
+      },
+      "area": 48.0,
+      "bbox": [
+        193.0,
+        66.0,
+        6.0,
+        11.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

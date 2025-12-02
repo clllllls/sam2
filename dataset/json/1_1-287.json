@@ -1,0 +1,127 @@
+{
+  "image": "1_1-287.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Vk^12T`01O2M2O2M3M2O2N1O2N1O2N2N1O2O0O2N2O0O2O0O1O100O10000O10O0100O10000O10000O101O000O101O0O10001O01O01O0001O01O00010O000010O01O00010O000010O01O01O010O001O010O1O001O010O0010O100O1000O100000000O10000000000O10000000000O2O00000O101O00000O101O000O10001O001N101O001O0O2O001O0O2O001O001N1O2O0O2N1O2O0O2N101N1KTT]4"
+      },
+      "area": 5292.0,
+      "bbox": [
+        92.0,
+        32.0,
+        150.0,
+        104.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Pn`47P`0100O01N2O1O1000001O00QQa3"
+      },
+      "area": 64.0,
+      "bbox": [
+        285.0,
+        214.0,
+        12.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "k[a75S`0101O00000010N1OeSb0"
+      },
+      "area": 58.0,
+      "bbox": [
+        475.0,
+        163.0,
+        9.0,
+        13.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fo`41V`03M2N11O000000101Lkoa3"
+      },
+      "area": 50.0,
+      "bbox": [
+        285.0,
+        267.0,
+        10.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "n]g61W`02M3N1N3N2M2O2M2O2M3N1N3N2M2O2M3O1N2O0O2O1N2O1N2O1N2O2M2O1N3N1N2O1N33L9G6K1N3M2011N2O0O2O1N1\\BdNU<_1[CjNh<Z1hBoN[=m13M2N3N2M2N3M3M3L4L5K5J6K5J6K5Ka`?"
+      },
+      "area": 2881.0,
+      "bbox": [
+        424.0,
+        118.0,
+        65.0,
+        168.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "bSa61V`01N2O1O2M2O1O2M2O1O1N3N00000O10O10O10000O10O10O10O01O1O1O1O1O1O1O1O1O1O1O1O1O001N2O1O1N2O1O1N2O1O1N2M3M3M2N3M3N101O1O0O2O1O001O13L4M3M3Lf0[O3M2M3N3L6K7I7Hem?"
+      },
+      "area": 2530.0,
+      "bbox": [
+        411.0,
+        283.0,
+        77.0,
+        131.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

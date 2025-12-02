@@ -1,0 +1,87 @@
+{
+  "image": "1_1-20.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hek18a??H81O00000000000000000000000000000000000000000000000000000000000001Udj5"
+      },
+      "area": 1023.0,
+      "bbox": [
+        117.0,
+        249.0,
+        35.0,
+        32.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cR>3U`03L100O100000O10000000O10000000000001O1O001LhY^7"
+      },
+      "area": 159.0,
+      "bbox": [
+        27.0,
+        376.0,
+        23.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Vg<;n?1N2NO1O1O100O1O1O1N2N3Mbgd7"
+      },
+      "area": 122.0,
+      "bbox": [
+        25.0,
+        30.0,
+        13.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fVc71W`01N2O1N010O1000000O100O100O100O1YW<"
+      },
+      "area": 104.0,
+      "bbox": [
+        478.0,
+        479.0,
+        17.0,
+        11.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

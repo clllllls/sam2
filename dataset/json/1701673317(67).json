@@ -1,0 +1,27 @@
+{
+  "image": "1701673317(67).bmp",
+  "width": 520,
+  "height": 517,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "V`b57l?4L4M3M2N2O000O2O001N100O1O100O1N2N2O10O01O@WAEl>6YAHi>4ZAJc?NclV2"
+      },
+      "area": 595.0,
+      "bbox": [
+        353.0,
+        270.0,
+        26.0,
+        36.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

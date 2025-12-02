@@ -1,0 +1,67 @@
+{
+  "image": "1_1-55.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oj[15R`02O0O2O0001N2NRUh6"
+      },
+      "area": 58.0,
+      "bbox": [
+        86.0,
+        173.0,
+        8.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "gTk1a0g?b0^O00000000000000000000000000000000000000000000000000000000000O16J<D<D\\cj5"
+      },
+      "area": 1192.0,
+      "bbox": [
+        116.0,
+        246.0,
+        36.0,
+        36.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "PcW72V`02M4M3M2N2N3N2O01O002K6K5KkZi0"
+      },
+      "area": 176.0,
+      "bbox": [
+        456.0,
+        31.0,
+        14.0,
+        27.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

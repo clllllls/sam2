@@ -1,0 +1,9 @@
+{
+  "scale_min": 120,
+  "scale_max": 200,
+  "alpha_min": 85,
+  "alpha_max": 100,
+  "angle_min": 0,
+  "angle_max": 360,
+  "defect_type": "fahei"
+}

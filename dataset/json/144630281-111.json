@@ -1,0 +1,107 @@
+{
+  "image": "144630281-111.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Y[W74T`000001O00000000000O11O0001O01O0001O00000000000000O1000000000001O000100O1O01O1Ob\\<"
+      },
+      "area": 207.0,
+      "bbox": [
+        455.0,
+        304.0,
+        40.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "f_>5S`01O00001O0000000000000000000000001N01000000O100000000001O000001N1O3MaiW7"
+      },
+      "area": 241.0,
+      "bbox": [
+        28.0,
+        277.0,
+        35.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lgi3e0n>e000001O0000000000000000000000000000000000000000000000000000000000000000000000000000P`h3"
+      },
+      "area": 1746.0,
+      "bbox": [
+        239.0,
+        367.0,
+        43.0,
+        42.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`Z^31U`02O1O2N1O20N1Ngee4"
+      },
+      "area": 42.0,
+      "bbox": [
+        217.0,
+        130.0,
+        8.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "nTc22S`0400OO101O1OZ[a5"
+      },
+      "area": 31.0,
+      "bbox": [
+        163.0,
+        387.0,
+        7.0,
+        7.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

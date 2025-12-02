@@ -1,0 +1,107 @@
+{
+  "image": "1_1-252.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "d`>Z1S>l0O0O1000010O00000O2O00000001O00000000000000000001O01O0000100O2N5K3M1O2N100O2O2M3M3L4M4L6J2O3L7I2N3L2O2M4JhRn6"
+      },
+      "area": 3161.0,
+      "bbox": [
+        28.0,
+        280.0,
+        54.0,
+        77.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dkV35Q`06J8H4I8K3M3M3N2N3N0N3N1O2N2M2O2O1O1N3M2O0O2O00001O1O0O2N100O2O0O10000000O1000000000O10000000000001O00000000000001N1000000O1000O10O1001O1O000O2O00001O000O1000000O1O101N101N2O0O2N101N101M4M4L1O2N1O2J5M6K6K3L4M4L2N:EZ[Z3"
+      },
+      "area": 6483.0,
+      "bbox": [
+        202.0,
+        255.0,
+        108.0,
+        77.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "jek6?h?7H8H3L3001O00N2M3N2O1O1F:M3MXNeAi1Y>41O2N00M3N2N3M2O1N2N2O2O000000000000001O0001O001O00010O001O00010O0001O01O0001O01O000O3dNeo="
+      },
+      "area": 3773.0,
+      "bbox": [
+        432.0,
+        268.0,
+        60.0,
+        81.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[Xb7531f?90000000N2M3I7O_Wa0"
+      },
+      "area": 99.0,
+      "bbox": [
+        477.0,
+        34.0,
+        9.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fPP41V`03L3N11O01O01O01O001O001O001OO1N4M3Lb\\n3"
+      },
+      "area": 139.0,
+      "bbox": [
+        252.0,
+        50.0,
+        19.0,
+        13.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

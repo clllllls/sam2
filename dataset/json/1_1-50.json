@@ -1,0 +1,107 @@
+{
+  "image": "1_1-50.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "gR>i0R>b1]Na1`N]1TOl0L4L4L4M3N2N2O1N3M2O100O1O2O0O100O1O2O0O1000001O00000000000001O00001O00UGlHb8U7\\GoHb8R7\\GnHd8S7ZGnHf8Z7001O00001O001M2M4L4M2O2O001O2N1O2N1O2N1O2N1O2O1N2N2N1O2N2N2N1O2N2N2N2N2N2N2N2N2N3M2M3N2M3N3L5L3L5L4K4M4L5L6J5J7J6J5J5K4M2M3M4M2M3M4L2N100O1O1O1O100N2O1O001O1O1O1O1O1O1O1O1O1O1O1O1O010O100O100O100O100O10O01000000000O100O1O10O0010O01O01O01O0010O01O01O01O010O00001O0010O01O000010O01O10O0100O00100N2O001O1O001O1O1O2N1O1O1O2M2O1N2N2O2M2N3N4K5K5LQX]4"
+      },
+      "area": 26208.0,
+      "bbox": [
+        27.0,
+        188.0,
+        214.0,
+        261.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dPY51V`01O2N1O1O2N1N3N1O2M2O1N3N1N3N001N2O1N2O1O1O1O1O1O1O1N2O001O1O1O1O1O1O1O1O1O1O1O1O1N101O1O1O1O1O1O1O100O100O10O01O100O10O0100O10O0100O100O010O1O10O0100O100O00100O00100O1O010O1O00100O1O010O1O010O1N2N1O2N2N1O1O1O1O2N1N2O2N2N2N3M2N2N3M1N3M2O1N3M2N3N2M2fN[1J5M4O1O001O10O01O1O001O1000O100O100O10000O100O100000000000000000000bN]1UMbb="
+      },
+      "area": 14297.0,
+      "bbox": [
+        332.0,
+        226.0,
+        161.0,
+        217.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^h]76m?6M3M20O010O1O1N2M4LVgd0"
+      },
+      "area": 143.0,
+      "bbox": [
+        468.0,
+        100.0,
+        11.0,
+        18.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "X]Y3>e?=E6K3M3^OSOeAo0Y>b0L3O1N3M2O1N2O2M2O2N1O1O2O001O1N2O1O0O2O1O001O1O1N2O00000000O00010000O1O10000001O0O1O1000001O0000001O0000000000000O1000000000O100001O0000001O0000001O1N10001O1O01O01O0O1O2N1O1O1O10001N100O1O2N1O100O2N2N2N3M2N1]NnAo0T>nNPBk0j>TOj@8MM\\hU3"
+      },
+      "area": 9069.0,
+      "bbox": [
+        207.0,
+        248.0,
+        113.0,
+        98.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]cQ23R`04O001N2OO1O014K]lQ6"
+      },
+      "area": 65.0,
+      "bbox": [
+        129.0,
+        96.0,
+        9.0,
+        11.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

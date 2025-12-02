@@ -1,0 +1,67 @@
+{
+  "image": "1_1-198.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "W]?8Z1IkN`0<FO0i0Mg9X5L0O1O1000000000O10O1000000000O01000001N01000000O010O1000000000O100000O1000000O10000O100O100ULbEk1_:oLWE<j0_2P:PM]E7P1c2W:YMYFY2R<ZOWB^Nl=_1WB^No=\\1a0N<D2mNQAi0X?O1N4M7H102L4LhPh6"
+      },
+      "area": 8920.0,
+      "bbox": [
+        30.0,
+        173.0,
+        64.0,
+        179.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dUl18`?`0G:0N1O1O11O1O1O=C001OO01O10000000001O000O1O2OO100000000001OO010O010O01O010O3N1N11O1O1O000001OO1000O11O0000O1O1O1O1M3M3O1O1O1O100001O1O1OO3CSN[Bo1R=RNRC2IT2o<hMXCd2h<\\MWCe2i<ZMYCe2g<ZM\\Cd2d<\\M]Cc2c<^M^Ca2`<bMXCf2MUMb<a3M4`C_LT<m3mCoKj;[4M2^DeKR;]4lDfKQ;[4nDoKi:R4UEPLf:m4M2N2N2N101N2N1O2N2N02O000O100000001O2N1O1O0001OO2O2N000O1000000O1000O02O1O000O1000000O10O010O02O1N10000000000000O100O11O000000000000O2OO0100O1000000000000O1O1O1O11O000000000000O1N3N3L3N02O000000000000000O1O101N1O1O100O100001OO10001O1O1O1N2O1O1O1O1O1O1N2N101N1O2O0KmDTKT;j47M2O2HbDbKa;\\47IXDkKj;T464LO001O1O1O1O4L3M2M3M8F4K5L4M5L4^OfBoM\\=P2jBhMX=X2;1L42cMXBR2R>J7L3N2N4M4D:FPAVOT?g0o@VOS?h09M7I3L4LoZV2"
+      },
+      "area": 33486.0,
+      "bbox": [
+        118.0,
+        165.0,
+        263.0,
+        197.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "d`k66Q`03M<E5K9G<D4L8H7I9G:oDPNV7^2TFQMl1e0o7T3jFcMU9h41O000O100O100O1O1O1O1O1O1O1O10O10N2N2O1O1O1O1O10OO2O1O1O1O1O1O1000000000000O1000000000000O2VOZEoKT]>"
+      },
+      "area": 9408.0,
+      "bbox": [
+        432.0,
+        146.0,
+        60.0,
+        201.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

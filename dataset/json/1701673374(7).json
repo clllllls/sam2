@@ -1,0 +1,27 @@
+{
+  "image": "1701673374(7).bmp",
+  "width": 520,
+  "height": 519,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          519,
+          520
+        ],
+        "counts": "_Xf65Q`01O101O00000000O2O000OgV[1"
+      },
+      "area": 82.0,
+      "bbox": [
+        422.0,
+        387.0,
+        12.0,
+        8.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

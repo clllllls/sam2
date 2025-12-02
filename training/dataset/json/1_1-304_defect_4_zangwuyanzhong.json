@@ -1,0 +1,36 @@
+{
+  "annotations": [
+    {
+      "segmentation": {
+        "counts": [
+          141996,
+          1,
+          142513,
+          7,
+          143032,
+          9,
+          143552,
+          9,
+          144071,
+          10,
+          144592,
+          9,
+          145112,
+          9,
+          145633,
+          7,
+          146155,
+          2
+        ],
+        "size": [
+          520,
+          520
+        ]
+      },
+      "area": 63,
+      "label": "zangwuyanzhong",
+      "image_id": "1_1-304_defect_4_zangwuyanzhong",
+      "uncertain_iou": 1.0
+    }
+  ]
+}

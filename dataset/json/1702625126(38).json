@@ -1,0 +1,87 @@
+{
+  "image": "1702625126(38).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "efZ21U`0101O0O2O001N101O0O2O0O2O1O0O2O001N2O0100O01000O01000O010O10O10O10O01000O01000O0100O01000O010O10O10O10O1000O010000O10O10O1000O010000O01000O1000O010000O01000O1O1O100O1O001O100O1O1O100000O100000000000000O10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001O001O00001O001O00001O00001O001O00ZOm@7S?HUA2j>NZANf>1]ANb>1`AN`>2bAL^>3eALZ>3hALX>4jAKU>4lALT>3lANT>2lAOS>0nA0R>OnA3Q>MoA3Q>LoA6Q?0O2O0O2O001N101N101O001O001N101O001O1N101O001O001N101O001O0O2O001O001O001O001O001N13M4L5K4L<D^`U2"
+      },
+      "area": 4994.0,
+      "bbox": [
+        147.0,
+        6.0,
+        236.0,
+        61.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "j]h46R`000001O00001OO100O3N2NRaY3"
+      },
+      "area": 73.0,
+      "bbox": [
+        300.0,
+        90.0,
+        12.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "o_=;c?d0[Of0ZOf0[Od0_Ob0A:G5J5L5J5K6K5J5L5L3M4L3M3L3N3M3M3M3M201OPKoFj2Z;N2M3N1O2N2M3N2N2N2N1N3N2N2L4M3M3M2N3M3M2N1O1O2N1O1O1O1O2N1O1N2M3N2N3L3N2M3N2N3L3N2N2M3N3N1N2O2M2O1N2O2M2O1O1N3N1N2O2M2OmY^6"
+      },
+      "area": 7420.0,
+      "bbox": [
+        26.0,
+        201.0,
+        87.0,
+        206.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "WWc21U`02N2N2O1O1O1O1O1N2O1O1O1O1O2N1O1O1O1N2O1O1O1O1O11O0010O0001O001O001O001O00001O0010O000000000000000001O000001O000000000001O00000000000001O000001O000000000000000001OO100000000000O1000000000000O100000000000000O10O1000000000O100000000000000O100000000000000O1000O10000000O100000000000000O1000000000000O10YOm@9S?FRA6n>IRA7o>HRA7o>GRA9o>FRA:n>ERA;n>ESA:]?01O0010O06JTbQ3"
+      },
+      "area": 3914.0,
+      "bbox": [
+        163.0,
+        434.0,
+        164.0,
+        36.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

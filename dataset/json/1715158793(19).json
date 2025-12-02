@@ -1,0 +1,27 @@
+{
+  "image": "1715158793(19).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "WSe57f?<O00O1O1H8N2O100O10000010O000010O000010O0010O00010O010O010O01O01O010O0001O01O01O010O01O010O010N3MUbi1"
+      },
+      "area": 324.0,
+      "bbox": [
+        356.0,
+        316.0,
+        50.0,
+        19.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

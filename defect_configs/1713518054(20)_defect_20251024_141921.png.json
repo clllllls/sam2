@@ -1,0 +1,9 @@
+{
+  "scale_min": 140,
+  "scale_max": 180,
+  "alpha_min": 90,
+  "alpha_max": 100,
+  "angle_min": 0,
+  "angle_max": 360,
+  "defect_type": "zangwu"
+}

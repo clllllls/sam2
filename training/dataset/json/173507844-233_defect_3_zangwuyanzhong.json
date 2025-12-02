@@ -1,0 +1,34 @@
+{
+  "annotations": [
+    {
+      "segmentation": {
+        "counts": [
+          221110,
+          1,
+          221629,
+          5,
+          222148,
+          6,
+          222667,
+          7,
+          223187,
+          8,
+          223707,
+          8,
+          224226,
+          9,
+          224746,
+          6
+        ],
+        "size": [
+          520,
+          520
+        ]
+      },
+      "area": 50,
+      "label": "zangwuyanzhong",
+      "image_id": "173507844-233_defect_3_zangwuyanzhong",
+      "uncertain_iou": 1.0
+    }
+  ]
+}

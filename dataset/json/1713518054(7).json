@@ -1,0 +1,27 @@
+{
+  "image": "1713518054(7).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[\\o32V`04K3N1O2N000000001N101O01O0O100001O002N0000O10000002M101O00000000002N1O00000001O00100O02N0000O10O20O10O01O001O000000001O001O01O01O0O101O001O0001O0000O2O1O1O1O001O001O2N3M0OZ_l2"
+      },
+      "area": 1410.0,
+      "bbox": [
+        250.0,
+        441.0,
+        87.0,
+        27.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

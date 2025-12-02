@@ -1,0 +1,87 @@
+{
+  "image": "1_1-3999998888687 (17).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "hl;P2^9W1XOf0I6K4K6L3N2N3M2N3M2N3N1N[MUIIh6ImI3P6KVJ4g5J_J5^5IhJ6U5HQK7l4GZK8c4FcK9Z4ElK:R4CTL<i3B]L=`3AfL=X3AmL?P3_OVM?h2@\\M`0b2^OcMa0Z2^OjMa0T2^OQNa0l1^OXNa0g1]O]Nc0`1\\OeNc0X1\\OlNc0S1\\OQOc0l0]OWOb0g0]O^Ob0`0]OCc0:]OIb06]OMb01^O2a0L^O8`0H_O:a0D_O?`0_O@d0?[O@h0?VO@m0?ROAQ1>mNBV1=hNCZ1=dNC_1<_NEc19\\NGg18WNHk18SNHP27nMIU26iMJZ24fML[24cML_24`MKa26]MJe25[MJg25XMLi23WMLj25UMJm25RMKP34PMKQ36mLKT34lLKV34iLLY33gLL[34cLL_33aLM`32_LNc32\\LMe33[LLg33YLMh32XLMj33TLMn32RLMP42PLNQ42nKMS43mKLU43kKLV44iKLY44fKLZ44fKK[46dKH_47aKGa49^KFe4:h3010O01O010O010O01O01O010O010O0010O010O0001O001O0010O000001O0001O01O0000000010O000001O0001O01O00001O00010N10001O000O101O000000]dc2"
+      },
+      "area": 6731.0,
+      "bbox": [
+        30.0,
+        64.0,
+        155.0,
+        294.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "YR]14\\<001O000N21O0MkQ\\3"
+      },
+      "area": 39.0,
+      "bbox": [
+        115.0,
+        151.0,
+        8.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "YPW32\\<4O1N10N1O2N1O1OWga1"
+      },
+      "area": 40.0,
+      "bbox": [
+        263.0,
+        279.0,
+        9.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "bf91]<4L4N2N1O001O12M2O00OO2N4LYR]4"
+      },
+      "area": 127.0,
+      "bbox": [
+        24.0,
+        334.0,
+        14.0,
+        16.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

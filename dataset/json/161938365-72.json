@@ -1,0 +1,47 @@
+{
+  "image": "161938365-72.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "o^R46m?7A?M3M5MO000APAFP?6UAIh?LX`P4"
+      },
+      "area": 244.0,
+      "bbox": [
+        256.0,
+        459.0,
+        10.0,
+        36.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cUm1c0e?c0]OO100000000000000000000000000000O10O100000000000000000000000000000O1c0]OdRh5"
+      },
+      "area": 1336.0,
+      "bbox": [
+        120.0,
+        241.0,
+        37.0,
+        40.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

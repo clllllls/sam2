@@ -1,0 +1,167 @@
+{
+  "image": "1_1-247777.bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "faW37W<4L4[DHn::lDKT;i000O13J4GmUa1"
+      },
+      "area": 236.0,
+      "bbox": [
+        265.0,
+        34.0,
+        9.0,
+        40.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "WXa01]<4N1O0001N2OYXX4"
+      },
+      "area": 31.0,
+      "bbox": [
+        44.0,
+        69.0,
+        7.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "mkb04[<2O000O1001O01O0000000000000001O00000000000O2MTPP4"
+      },
+      "area": 148.0,
+      "bbox": [
+        48.0,
+        123.0,
+        24.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "Ua`08Y<1N2N001000N2O1O0000000000O1O1O2O0000O002M4J[gR4"
+      },
+      "area": 217.0,
+      "bbox": [
+        42.0,
+        133.0,
+        23.0,
+        14.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "n`U44Z<2O100O20O000O3NcVc0"
+      },
+      "area": 61.0,
+      "bbox": [
+        341.0,
+        330.0,
+        9.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "c`W43]<0O100O1O010O100O100O1O100O1O1f_>"
+      },
+      "area": 102.0,
+      "bbox": [
+        346.0,
+        362.0,
+        16.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "`ln22T<:00O1O101OO101N10001N1N3N2M2NjSg1"
+      },
+      "area": 160.0,
+      "bbox": [
+        242.0,
+        356.0,
+        16.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "g^R12[<400O001O1OO10000O100000000000000001N11O010O100O1O00001O00001O010O0001Sg[3"
+      },
+      "area": 204.0,
+      "bbox": [
+        88.0,
+        84.0,
+        36.0,
+        12.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

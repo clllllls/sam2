@@ -1,0 +1,67 @@
+{
+  "image": "1702625126(13).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "QSb61V`01O1O2N1O1N3N1O2N1O1O2M1O100O1O100O1O1O100O1O1O1O1O2N2N2N2N2N2N2N2O001O100O1O1O1O1O12N3L5L3M1N100O10000O10000O100O101O0O1O100O2N11O4L4M3L2NO100O2O2M3N1O2M4M6AT\\="
+      },
+      "area": 2382.0,
+      "bbox": [
+        413.0,
+        316.0,
+        80.0,
+        66.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mn`05k?:E;H8L4L4L4L4K5L6J6J6J6J6K6I6J7J5J5L3L_NlCTOQ<b0bDWO[;f0QEUOl:f0`EVO\\:g0mEWOo9f0ZFWOd9f0dFXOX9g0oFWOn8h0XGUOe8j0]3N100O2N101N2N2O0O2N2N2O1N2N2N1O2O1N2O1O1O001O100O2N2N2Nigi6"
+      },
+      "area": 2522.0,
+      "bbox": [
+        33.0,
+        113.0,
+        58.0,
+        179.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_RT31W`00O100O101N100O1O101N010O100O010O100O010O10O01O100O010O100O0100000000000O100000O100000O1000000000O1000O1000000000000O0100000000000O1000O10000000O11O0000000000001O00000001O000001O000001O000001O00000001O0000000001O01O0000001O00001O01O0001O0000001O0000010O01O10O01O00100O010O00100O010O100O1O010O100O1O100O010O100O1O101N10Ugb2"
+      },
+      "area": 1988.0,
+      "bbox": [
+        197.0,
+        17.0,
+        160.0,
+        37.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

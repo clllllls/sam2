@@ -1,0 +1,107 @@
+{
+  "image": "1701673317(24).bmp",
+  "width": 520,
+  "height": 515,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          515,
+          520
+        ],
+        "counts": "Rh^22o?4L5L4M2N3L3NO01000O010O01000O0100O0100O01000O100O100O010O10000O10O02O0O100O10001N100O100O10001N100O100O101N2O1O1N2O[Si4"
+      },
+      "area": 963.0,
+      "bbox": [
+        156.0,
+        288.0,
+        59.0,
+        31.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          515,
+          520
+        ],
+        "counts": "bQ>9`?:1O00000000000000000000001O1O2N1O1O1O1O1O1O3M4MblZ7"
+      },
+      "area": 361.0,
+      "bbox": [
+        27.0,
+        471.0,
+        25.0,
+        20.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          515,
+          520
+        ],
+        "counts": "eT\\72P`03M11O0O2Mc[f0"
+      },
+      "area": 23.0,
+      "bbox": [
+        469.0,
+        276.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          515,
+          520
+        ],
+        "counts": "][S74o?001O000O12Lgdn0"
+      },
+      "area": 31.0,
+      "bbox": [
+        452.0,
+        32.0,
+        7.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          515,
+          520
+        ],
+        "counts": "hT?6i?7M00000000O1O1O001O1O001O002O2M2N^Z]7"
+      },
+      "area": 163.0,
+      "bbox": [
+        30.0,
+        55.0,
+        18.0,
+        16.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

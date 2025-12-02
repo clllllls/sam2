@@ -1,0 +1,247 @@
+{
+  "image": "103748_232.bmp",
+  "width": 440,
+  "height": 440,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "g]Z27`=2OO101Mc_`3"
+      },
+      "area": 37.0,
+      "bbox": [
+        173.0,
+        94.0,
+        5.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "Tb_33d=4N0002N001O00O01000O010O0100O010O0100O0100O0100O01000O010000O010O0001O1O100O2OO1O000O1O100000000O0100O0100Olje1"
+      },
+      "area": 239.0,
+      "bbox": [
+        259.0,
+        283.0,
+        55.0,
+        34.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "U^Q22f=1N2O0O2O0000010O001O000001O0000O1O13KlPc3"
+      },
+      "area": 131.0,
+      "bbox": [
+        152.0,
+        131.0,
+        20.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "nWf45`=4N10O1N0O3KUjS1"
+      },
+      "area": 47.0,
+      "bbox": [
+        349.0,
+        288.0,
+        7.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "nWa0>Y=>C7I1N0100N2N2O1O10000O10001N10001A\\CHj<1`0N1N][R5"
+      },
+      "area": 565.0,
+      "bbox": [
+        40.0,
+        60.0,
+        22.0,
+        37.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "hck44R=4UC7U<P1fCdNR<c1N1N2O1O5K2N3M2N4L2N8H1O1OO2Ok0UO:F:Fa0@2M>_OjRg0"
+      },
+      "area": 1322.0,
+      "bbox": [
+        362.0,
+        39.0,
+        24.0,
+        86.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "mgl06\\=5100000000000000000000O010000000000000000000O10O10000000000000000000O10O100000000000000000O10O100000000000000000O1O100O2N3N2MYjT4"
+      },
+      "area": 662.0,
+      "bbox": [
+        66.0,
+        387.0,
+        64.0,
+        16.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "gSf03c=6K6I5L0kC@R;`0mDIl:6TEOg:1[ENe:3ZENd:8XEHg:a0PE@n:m0gDSOX;g11O1O1WNbDV1^;dNjDZ1W;`NoD_1g;O4K7I7J6I6K6I8IQgk4"
+      },
+      "area": 1001.0,
+      "bbox": [
+        51.0,
+        189.0,
+        26.0,
+        78.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "b_k41e=2N2N2O1000000O1000000O1000000O11O00100N102N2N2Ngjf0"
+      },
+      "area": 193.0,
+      "bbox": [
+        361.0,
+        368.0,
+        25.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 10,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "Y^h41e=3M2N3M3M3OO1O1O001N2O005Jacn0"
+      },
+      "area": 129.0,
+      "bbox": [
+        354.0,
+        333.0,
+        14.0,
+        17.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 11,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "k]m47_=:jDB`8f0VG]Oi8k0mFXOU9S1[FQOf9_21O2N2N2O0O2N2N1O2O1N2N1N3N5J9H8H9F;B=@Ukd0"
+      },
+      "area": 1550.0,
+      "bbox": [
+        366.0,
+        165.0,
+        25.0,
+        97.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 12,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "iZ[12f=3M2M100O10000O11O1M2N3MaT\\4"
+      },
+      "area": 87.0,
+      "bbox": [
+        100.0,
+        374.0,
+        13.0,
+        10.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

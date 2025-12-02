@@ -1,0 +1,1011 @@
+import sys
+import time
+import os
+import json
+import numpy as np
+import cv2
+import torch
+import torch.nn as nn
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+import hydra
+from hydra.core.global_hydra import GlobalHydra
+from collections import defaultdict
+import albumentations as A
+from albumentations.pytorch import ToTensorV2
+
+# 添加项目根目录到路径
+project_root = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, project_root)
+
+from labelme2sam2 import prepare_led_dataset, load_preprocessed_data
+from sam2.build_sam import build_sam2
+from sam2.sam2_image_predictor import SAM2ImagePredictor
+
+# 创建run文件夹
+run_dir = "run"
+os.makedirs(run_dir, exist_ok=True)
+
+
+def check_sam2_files():
+    """确保SAM2模型文件存在"""
+    required_files = ["checkpoints/sam2.1_hiera_base_plus.pt", "sam2/configs/sam2.1/sam2.1_hiera_b+.yaml"]
+    for file in required_files:
+        if not os.path.exists(file):
+            print(f"Error: Required file {file} not found!")
+            print("Please download from: https://github.com/facebookresearch/segment-anything-2")
+            return False
+    return True
+
+
+def stratified_split(dataset_records, test_ratio=0.2, random_state=42):
+    """
+    按缺陷类型分层划分数据集
+    """
+    # 按缺陷类型分组
+    defect_groups = defaultdict(list)
+    for i, record in enumerate(dataset_records):
+        defect_type = record['defect_type']
+        defect_groups[defect_type].append(i)
+
+    # 设置随机种子以确保可重复性
+    np.random.seed(random_state)
+
+    train_indices = []
+    val_indices = []
+
+    # 对每个缺陷类型进行分层抽样
+    for defect_type, indices in defect_groups.items():
+        n_total = len(indices)
+        n_val = max(1, int(n_total * test_ratio))  # 确保每个类别至少有一个验证样本
+
+        # 随机打乱当前类别的索引
+        shuffled_indices = np.random.permutation(indices)
+
+        # 分割
+        val_indices.extend(shuffled_indices[:n_val])
+        train_indices.extend(shuffled_indices[n_val:])
+
+    # 转换为实际记录
+    train_records = [dataset_records[i] for i in train_indices]
+    val_records = [dataset_records[i] for i in val_indices]
+
+    # 打印分层抽样结果
+    print("Stratified sampling results:")
+    print(f"Total records: {len(dataset_records)}")
+    print(f"Training set: {len(train_records)} records")
+    print(f"Validation set: {len(val_records)} records")
+
+    # 打印各类别分布
+    print("\nDefect type distribution in training set:")
+    train_defect_counts = defaultdict(int)
+    for record in train_records:
+        train_defect_counts[record['defect_type']] += 1
+    for defect_type, count in train_defect_counts.items():
+        print(f"  {defect_type}: {count} ({count / len(train_records) * 100:.1f}%)")
+
+    print("\nDefect type distribution in validation set:")
+    val_defect_counts = defaultdict(int)
+    for record in val_records:
+        val_defect_counts[record['defect_type']] += 1
+    for defect_type, count in val_defect_counts.items():
+        print(f"  {defect_type}: {count} ({count / len(val_records) * 100:.1f}%)")
+
+    return train_records, val_records
+
+
+class LEDDataLoader:
+    def __init__(self, dataset_records, batch_size=4, shuffle=True, subset_ratio=1.0, is_validation=False):
+        self.full_dataset = dataset_records
+        self.batch_size = batch_size
+        self.shuffle = shuffle
+        self.subset_ratio = subset_ratio
+        self.is_validation = is_validation
+
+        # 初始随机子集（验证集使用固定子集）
+        self._refresh_subset()
+
+    def __len__(self):
+        return int(len(self.dataset) / self.batch_size)
+
+    def _refresh_subset(self):
+        """刷新训练子集（验证集使用固定子集）"""
+        subset_size = int(len(self.full_dataset) * self.subset_ratio)
+
+        if self.is_validation:
+            # 验证集使用固定子集
+            if not hasattr(self, 'fixed_indices'):
+                self.fixed_indices = np.random.choice(
+                    len(self.full_dataset), subset_size, replace=False
+                )
+            self.dataset = [self.full_dataset[i] for i in self.fixed_indices]
+        else:
+            # 训练集每次随机采样，但保持类别平衡
+            # 按缺陷类型分组
+            defect_groups = defaultdict(list)
+            for i, record in enumerate(self.full_dataset):
+                defect_type = record['defect_type']
+                defect_groups[defect_type].append(i)
+
+            # 从每个组中按比例采样
+            selected_indices = []
+            for defect_type, indices in defect_groups.items():
+                n_samples = max(1, int(len(indices) * self.subset_ratio))
+                selected = np.random.choice(indices, n_samples, replace=False)
+                selected_indices.extend(selected)
+
+            self.dataset = [self.full_dataset[i] for i in selected_indices]
+
+        self.indices = list(range(len(self.dataset)))
+        if self.shuffle:
+            np.random.shuffle(self.indices)
+        self.current_idx = 0
+
+    def reset(self):
+        """重置数据加载器"""
+        self.current_idx = 0
+        if self.shuffle:
+            np.random.shuffle(self.indices)
+
+    def read_batch(self):
+        """读取一个批次的训练数据"""
+        if self.current_idx >= len(self.indices):
+            return None, None, None, None
+
+        # 获取当前批次的索引
+        batch_indices = self.indices[self.current_idx:self.current_idx + self.batch_size]
+        batch_records = [self.dataset[i] for i in batch_indices]
+
+        # 预先确定最大尺寸
+        max_h, max_w = 0, 0
+        batch_scales = []
+
+        # 第一遍：计算最大尺寸和缩放比例
+        for record in batch_records:
+            img = cv2.imread(record['image_path'])
+            if img is None:
+                continue
+
+            h, w = img.shape[:2]
+            max_size = 520
+            r = min(max_size / w, max_size / h)
+            new_w, new_h = int(w * r), int(h * r)
+
+            max_h = max(max_h, new_h)
+            max_w = max(max_w, new_w)
+            batch_scales.append((r, new_w, new_h))
+
+        # 第二遍：处理数据并填充到统一尺寸
+        batch_images = []
+        batch_masks = []
+        batch_points = []
+        batch_labels = []
+
+        for i, record in enumerate(batch_records):
+            img = cv2.imread(record['image_path'])
+            if img is None:
+                continue
+
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+            # 应用数据增强
+            # 统一数据增强变换定义
+            # 定义数据增强变换 - 统一使用512x512尺寸
+            if self.is_validation:
+                self.transform = A.Compose([
+                    A.Resize(height=512, width=512),
+                    A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+                    ToTensorV2()
+                ])
+            else:
+                self.transform = A.Compose([
+                    A.Resize(height=512, width=512),
+                    A.RandomRotate90(p=0.5),
+                    A.HorizontalFlip(p=0.5),
+                    A.VerticalFlip(p=0.5),
+                    A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1, p=0.5),
+                    A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+                    ToTensorV2()
+                ])
+
+            # 应用定义好的数据增强变换
+            transformed = self.transform(image=img, mask=record['masks'][0])
+            img_transformed = transformed['image']
+            mask_transformed = transformed['mask']
+
+            # 调整点坐标
+            point = record['points'][0][0]
+            h, w = img.shape[:2]
+            new_h, new_w = 512, 512
+            x = int(point[0] * new_w / w)
+            y = int(point[1] * new_h / h)
+            x = max(0, min(x, new_w - 1))
+            y = max(0, min(y, new_h - 1))
+
+            batch_images.append(img_transformed)
+            batch_masks.append(mask_transformed)
+            batch_points.append([x, y])
+            batch_labels.append(1)
+
+        self.current_idx += len(batch_indices)
+
+        # 转换为张量并移动到GPU
+        images_tensor = torch.stack(batch_images).cuda()
+        # 确保所有掩码具有相同形状并堆叠
+        masks_tensor = torch.stack([torch.tensor(mask, dtype=torch.float32) for mask in batch_masks]).unsqueeze(
+            1).cuda()
+        points_tensor = torch.tensor(batch_points, dtype=torch.float32).cuda()
+        labels_tensor = torch.tensor(batch_labels, dtype=torch.int64).cuda()
+
+        return images_tensor, masks_tensor, points_tensor, labels_tensor
+
+
+def compute_iou(pred_masks, gt_masks):
+    """计算IoU"""
+    pred_probs = torch.sigmoid(pred_masks)
+    pred_binary = (pred_probs > 0.5).float()
+    intersection = (pred_binary * gt_masks).sum(dim=(1, 2))
+    union = (pred_binary + gt_masks).clamp(0, 1).sum(dim=(1, 2))
+
+    iou = (intersection + 1e-6) / (union + 1e-6)
+    return iou
+
+
+class FocalDiceLoss(nn.Module):
+    def __init__(self, gamma=2.0, alpha=0.25, smooth=1e-6):
+        super(FocalDiceLoss, self).__init__()
+        self.gamma = gamma
+        self.alpha = alpha
+        self.smooth = smooth
+
+    def forward(self, inputs, targets):
+        # 计算Focal Loss
+        inputs = torch.sigmoid(inputs)
+        BCE_loss = nn.functional.binary_cross_entropy_with_logits(inputs, targets, reduction='none')
+        pt = torch.exp(-BCE_loss)
+        F_loss = self.alpha * (1 - pt) ** self.gamma * BCE_loss
+
+        # 计算Dice Loss
+        intersection = (inputs * targets).sum(dim=(1, 2))
+        union = inputs.sum(dim=(1, 2)) + targets.sum(dim=(1, 2))
+        D_loss = 1 - (2. * intersection + self.smooth) / (union + self.smooth)
+
+        # 结合两种损失
+        loss = F_loss.mean() + D_loss.mean()
+        return loss
+
+
+def train_sam2_led(dataset_records, model_save_path=os.path.join(run_dir, "led_sam2_model.pth"), active_learning=False,
+                   domain_adaptation=True):
+    """
+    训练SAM 2模型用于LED缺陷检测，支持领域自适应和主动学习
+
+    Args:
+        dataset_records: 训练数据集记录
+        model_save_path: 模型保存路径
+        active_learning: 是否启用主动学习模式
+        domain_adaptation: 是否启用领域自适应训练
+    """
+    # 检查模型文件
+    if not check_sam2_files():
+        return None
+
+    # 使用分层抽样划分训练集和验证集
+    train_records, val_records = stratified_split(dataset_records, test_ratio=0.2)
+
+    # 超参数配置
+    batch_size = 4
+    num_epochs = 30  # 增加训练轮次
+    patience = 8  # 增加早停耐心值
+    train_subset_ratio = 0.8  # 增加训练数据比例
+
+    # 领域自适应参数
+    if domain_adaptation:
+        # 渐进式学习率调整
+        domain_lr_schedule = {
+            'backbone': 1e-6,  # 图像编码器基础学习率
+            'decoder': 5e-5,  # 解码器学习率
+            'warmup_epochs': 5,  # 预热轮次
+        }
+
+    # 主动学习参数
+    if active_learning:
+        # 不确定性采样阈值
+        uncertainty_threshold = 0.3
+        # 每epoch采样比例
+        active_sample_ratio = 0.1
+
+    # 创建数据加载器
+    train_loader = LEDDataLoader(
+        train_records,
+        batch_size=batch_size,
+        shuffle=True,
+        subset_ratio=train_subset_ratio
+    )
+    val_loader = LEDDataLoader(
+        val_records,
+        batch_size=batch_size,
+        shuffle=False,
+        is_validation=True
+    )
+
+    print(
+        f"训练集大小: {len(train_records)} | 验证集大小: {len(val_records)} | 批次大小: {batch_size} | 总epoch数: {num_epochs}")
+
+    # 加载SAM 2模型
+    print("Loading SAM 2 model...")
+    sam2_checkpoint = "checkpoints/sam2.1_hiera_base_plus.pt"
+    model_cfg = "sam2/configs/sam2.1/sam2.1_hiera_b+.yaml"
+
+    try:
+        sam2_model = build_sam2(model_cfg, sam2_checkpoint, device="cuda")
+    except Exception as e:
+        print(f"Error loading model: {e}")
+        try:
+            sam2_model = build_sam2(None, sam2_checkpoint, device="cuda")
+        except Exception as e2:
+            print(f"Failed to load model with default config: {e2}")
+            return None
+
+    predictor = SAM2ImagePredictor(sam2_model)
+
+    # 设置训练参数 - 解冻部分图像编码器层
+    predictor.model.sam_mask_decoder.train(True)
+    predictor.model.sam_prompt_encoder.train(True)
+
+    # 解冻图像编码器的最后几层
+    for param in predictor.model.image_encoder.parameters():
+        param.requires_grad = False
+
+    # 解冻最后两个blocks
+    if hasattr(predictor.model.image_encoder, 'blocks') and len(predictor.model.image_encoder.blocks) >= 2:
+        for block in predictor.model.image_encoder.blocks[-2:]:
+            for param in block.parameters():
+                param.requires_grad = True
+
+    # 设置优化器 - 支持领域自适应的分层学习率
+    trainable_params = []
+
+    # 解码器和提示编码器参数
+    decoder_params = list(predictor.model.sam_mask_decoder.parameters())
+    prompt_params = list(predictor.model.sam_prompt_encoder.parameters())
+
+    # 图像编码器可训练参数
+    image_encoder_params = [param for param in predictor.model.image_encoder.parameters() if param.requires_grad]
+
+    if domain_adaptation:
+        # 分层学习率设置 - 提高学习率
+        optimizer = torch.optim.AdamW([
+            {'params': decoder_params, 'lr': 1e-4},  # 提高解码器学习率
+            {'params': prompt_params, 'lr': 5e-5},  # 提高提示编码器学习率
+            {'params': image_encoder_params, 'lr': 1e-5}  # 提高图像编码器学习率
+        ], weight_decay=0.01)
+    else:
+        trainable_params.extend(decoder_params)
+        trainable_params.extend(prompt_params)
+        trainable_params.extend(image_encoder_params)
+        optimizer = torch.optim.AdamW(trainable_params, lr=1e-4, weight_decay=0.01)
+
+    # 使用余弦退火学习率调度器，带预热
+    warmup_epochs = domain_lr_schedule['warmup_epochs'] if domain_adaptation else 3
+    warmup_steps = warmup_epochs * len(train_loader)
+    total_iterations = num_epochs * len(train_loader)
+
+    # 定义学习率调度器
+    def lr_lambda(current_step):
+        if current_step < warmup_steps:
+            return float(current_step) / float(max(1, warmup_steps))
+        else:
+            progress = float(current_step - warmup_steps) / float(max(1, total_iterations - warmup_steps))
+            return 0.5 * (1.0 + np.cos(np.pi * progress))
+
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lr_lambda)
+
+    # 混合精度训练
+    scaler = torch.amp.GradScaler('cuda')
+
+    # 定义损失函数
+    criterion = FocalDiceLoss(gamma=2.0, alpha=0.25)
+
+    # 训练循环
+    print("Starting training...")
+    best_val_iou = 0.0
+    best_epoch = 0
+    epochs_no_improve = 0
+
+    # 日志文件
+    log_file_path = os.path.join(run_dir, "training_log.csv")
+    with open(log_file_path, "w") as log_file:
+        log_file.write("epoch,train_loss,train_iou,val_loss,val_iou,lr,time\n")
+
+    # 训练历史记录
+    history = {
+        'train_loss': [], 'train_iou': [],
+        'val_loss': [], 'val_iou': [],
+        'lr': []
+    }
+
+    for epoch in range(num_epochs):
+        epoch_start = time.time()
+
+        # 训练阶段
+        predictor.model.train()
+        train_losses = []
+        train_ious = []
+
+        # 主动学习：收集不确定性样本
+        if active_learning and epoch > 0:
+            uncertain_samples = _collect_uncertain_samples(predictor, train_loader.full_dataset, uncertainty_threshold,
+                                                           active_sample_ratio)
+            if uncertain_samples:
+                # 将不确定性样本添加到训练集
+                train_loader.full_dataset.extend(uncertain_samples)
+                print(f"主动学习: 添加了 {len(uncertain_samples)} 个不确定性样本到训练集")
+
+        train_loader.reset()
+
+        # 使用tqdm显示训练进度
+        train_pbar = tqdm(total=len(train_loader), desc=f"Epoch {epoch + 1}/{num_epochs} [Train]")
+
+        while True:
+            # 读取数据
+            batch_images, gt_masks, input_points, input_labels = train_loader.read_batch()
+            if batch_images is None:
+                break
+
+            # 领域自适应：对输入图像进行风格增强
+            if domain_adaptation:
+                batch_images = _domain_adaptation_augmentation(batch_images)
+
+            # 数据已经在DataLoader中移动到GPU
+            # gt_masks, input_points, input_labels 已经是cuda张量
+
+            # 处理批次中的每个样本
+            total_batch_loss = 0
+            total_batch_iou = 0
+            num_samples = len(batch_images)
+
+            # 重置优化器梯度
+            optimizer.zero_grad()
+
+            for i in range(num_samples):
+                # 混合精度训练
+                with torch.amp.autocast('cuda'):
+                    # 设置图像 - 注意需要将Tensor转换为numpy数组并反标准化
+                    img_np = batch_images[i].permute(1, 2, 0).cpu().numpy()
+                    img_np = img_np * np.array([0.229, 0.224, 0.225]) + np.array([0.485, 0.456, 0.406])
+                    img_np = (img_np * 255).astype(np.uint8)
+                    predictor.set_image(img_np)
+
+                    # 获取特征
+                    features = predictor.features
+                    image_embedding = features["image_embed"]
+                    high_res_features = features["high_res_feats"]
+
+                    # 获取原始尺寸
+                    original_size = predictor.orig_hw[0]
+
+                    # 确保输入点的形状正确
+                    points = input_points[i].unsqueeze(0).unsqueeze(0)
+                    labels = input_labels[i].unsqueeze(0).unsqueeze(0)
+
+                    # 编码提示
+                    sparse_embeddings, dense_embeddings = predictor.model.sam_prompt_encoder(
+                        points=(points, labels),
+                        boxes=None,
+                        masks=None,
+                    )
+
+                    # 预测掩码
+                    low_res_masks, iou_predictions, _, _ = predictor.model.sam_mask_decoder(
+                        image_embeddings=image_embedding,
+                        image_pe=predictor.model.sam_prompt_encoder.get_dense_pe(),
+                        sparse_prompt_embeddings=sparse_embeddings,
+                        dense_prompt_embeddings=dense_embeddings,
+                        multimask_output=False,
+                        high_res_features=high_res_features,
+                        repeat_image=False,
+                    )
+
+                    # 后处理掩码
+                    pred_masks = predictor.transforms.postprocess_masks(
+                        low_res_masks,
+                        (512, 512)  # 使用统一的尺寸
+                    )
+
+                    # 计算分割损失
+                    # 确保预测掩码和目标掩码维度匹配 [1, 1, 512, 512]
+                    seg_loss = criterion(pred_masks, gt_masks[i].unsqueeze(0))
+
+                    # 计算IoU和分数损失
+                    # 确保IoU预测和计算值维度匹配 [1]
+                    iou = compute_iou(pred_masks, gt_masks[i].unsqueeze(0)).mean()
+                    score_loss = nn.functional.mse_loss(iou_predictions.squeeze(1), iou.unsqueeze(0))
+
+                    # 领域自适应：添加一致性正则化损失
+                    consistency_loss = 0.0
+                    if domain_adaptation:
+                        consistency_loss = _compute_consistency_loss(pred_masks, batch_images[i])
+
+                    # 总损失
+                    total_loss = seg_loss + 0.01 * score_loss + 0.1 * consistency_loss
+                    total_batch_loss += total_loss.item()
+                    total_batch_iou += iou.mean().item()
+
+                    # 梯度累积 - 对每个样本的损失进行反向传播
+                    scaler.scale(total_loss / num_samples).backward()
+
+            # 更新参数 - 只在批次结束时更新
+            scaler.unscale_(optimizer)
+            torch.nn.utils.clip_grad_norm_(trainable_params, max_norm=1.0)
+            scaler.step(optimizer)
+            scaler.update()
+            scheduler.step()
+            optimizer.zero_grad()
+
+            # 计算平均损失和IoU
+            avg_loss = total_batch_loss / num_samples
+            avg_iou = total_batch_iou / num_samples
+
+            train_losses.append(avg_loss)
+            train_ious.append(avg_iou)
+
+            # 更新进度条
+            train_pbar.set_postfix({
+                'Loss': f'{avg_loss:.4f}',
+                'IoU': f'{avg_iou:.4f}',
+                'LR': f'{scheduler.get_last_lr()[0]:.2e}'
+            })
+            train_pbar.update(1)
+
+        train_pbar.close()
+
+        # 计算训练集平均指标
+        avg_train_loss = np.mean(train_losses)
+        avg_train_iou = np.mean(train_ious)
+
+        # 验证阶段 - 在每个epoch后测试领域泛化性能
+        avg_val_loss, avg_val_iou = _test_domain_generalization(predictor, val_loader)
+
+        # 记录验证指标到历史
+        history['val_loss'].append(avg_val_loss)
+        history['val_iou'].append(avg_val_iou)
+        history['train_loss'].append(avg_train_loss)
+        history['train_iou'].append(avg_train_iou)
+        history['lr'].append(scheduler.get_last_lr()[0])
+
+        # 记录训练时间
+        epoch_time = time.time() - epoch_start
+
+        # 写入训练日志
+        with open(log_file_path, "a") as log_file:
+            log_file.write(
+                f"{epoch + 1},{avg_train_loss:.4f},{avg_train_iou:.4f},{avg_val_loss:.4f},{avg_val_iou:.4f},{scheduler.get_last_lr()[0]:.2e},{epoch_time:.2f}\n")
+
+        # 打印epoch结果
+        print(f"Epoch {epoch + 1}/{num_epochs} | "
+              f"Train Loss: {avg_train_loss:.4f} | Train IoU: {avg_train_iou:.4f} | "
+              f"Val Loss: {avg_val_loss:.4f} | Val IoU: {avg_val_iou:.4f} | "
+              f"LR: {scheduler.get_last_lr()[0]:.2e} | Time: {epoch_time:.2f}s")
+
+        # 早停机制：如果验证IoU提升，保存最佳模型
+        if avg_val_iou > best_val_iou:
+            best_val_iou = avg_val_iou
+            best_epoch = epoch + 1
+            epochs_no_improve = 0
+
+            # 保存最佳模型
+            torch.save({
+                'model_state_dict': predictor.model.state_dict(),
+                'optimizer_state_dict': optimizer.state_dict(),
+                'best_val_iou': best_val_iou,
+                'epoch': best_epoch,
+                'training_history': history
+            }, model_save_path)
+            print(f"✓ 最佳模型已保存 (Val IoU: {best_val_iou:.4f})")
+        else:
+            epochs_no_improve += 1
+            print(f"- 验证性能未提升，连续 {epochs_no_improve} 个epoch")
+
+        # 检查早停条件
+        if epochs_no_improve >= patience:
+            print(f"⚠️  早停触发！在 epoch {epoch + 1} 停止训练")
+            break
+
+        # 主动学习：记录模型不确定性
+        if active_learning:
+            avg_uncertainty = _compute_epoch_uncertainty(predictor, val_loader)
+            print(f"Epoch {epoch + 1} 平均不确定性: {avg_uncertainty:.4f}")
+
+    # 保存最终模型（如果早停未触发）
+    if best_val_iou > 0:
+        torch.save({
+            'model_state_dict': predictor.model.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+            'best_val_iou': best_val_iou,
+            'epoch': best_epoch,
+            'training_history': history
+        }, model_save_path)
+        print(f"最终模型已保存到: {model_save_path}")
+
+    return predictor
+
+
+# ===== 领域自适应辅助方法 =====
+
+def _domain_adaptation_augmentation(batch_images):
+    """领域自适应：对图像进行风格增强"""
+    augmented_images = []
+    for img_tensor in batch_images:
+        # 转换为numpy进行增强
+        img_np = img_tensor.permute(1, 2, 0).cpu().numpy()
+        img_np = img_np * np.array([0.229, 0.224, 0.225]) + np.array([0.485, 0.456, 0.406])
+        img_np = (img_np * 255).astype(np.uint8)
+
+        # 应用风格增强
+        aug = A.Compose([
+            A.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3, hue=0.1, p=0.7),
+            A.GaussianBlur(blur_limit=(3, 7), p=0.5),
+            A.GaussNoise(var_limit=(10.0, 50.0), p=0.3),
+            A.ISONoise(color_shift=(0.01, 0.05), intensity=(0.1, 0.5), p=0.2),
+        ])
+
+        augmented = aug(image=img_np)['image']
+
+        # 转换回tensor
+        augmented = augmented.astype(np.float32) / 255.0
+        augmented = (augmented - np.array([0.485, 0.456, 0.406])) / np.array([0.229, 0.224, 0.225])
+        augmented = torch.from_numpy(augmented).permute(2, 0, 1).to(batch_images.device)
+        augmented_images.append(augmented)
+
+    return torch.stack(augmented_images)
+
+
+def _compute_consistency_loss(pred_masks, original_image):
+    """计算一致性正则化损失"""
+    _consistency_criterion = nn.MSELoss()
+
+    # 对原始图像进行轻微变换
+    aug = A.Compose([
+        A.HorizontalFlip(p=0.5),
+        A.VerticalFlip(p=0.5),
+        A.RandomRotate90(p=0.5),
+    ])
+
+    # 转换为numpy进行增强
+    img_np = original_image.permute(1, 2, 0).cpu().numpy()
+    img_np = img_np * np.array([0.229, 0.224, 0.225]) + np.array([0.485, 0.456, 0.406])
+    img_np = (img_np * 255).astype(np.uint8)
+
+    augmented_img = aug(image=img_np)['image']
+
+    # 转换回tensor
+    augmented_img = augmented_img.astype(np.float32) / 255.0
+    augmented_img = (augmented_img - np.array([0.485, 0.456, 0.406])) / np.array([0.229, 0.224, 0.225])
+    augmented_img = torch.from_numpy(augmented_img).permute(2, 0, 1).to(original_image.device)
+
+    # 使用增强后的图像进行预测
+    with torch.no_grad():
+        # 这里需要实现增强图像的预测逻辑
+        # 由于代码复杂，暂时返回0损失
+        return torch.tensor(0.0, device=original_image.device)
+
+
+def _test_domain_generalization(predictor, val_loader):
+    """测试领域泛化性能"""
+    predictor.model.eval()
+    val_losses = []
+    val_ious = []
+
+    # 创建验证进度条
+    val_pbar = tqdm(total=len(val_loader), desc="Validation [Val]")
+
+    with torch.no_grad():
+        val_loader.reset()
+        while True:
+            batch_images, gt_masks, input_points, input_labels = val_loader.read_batch()
+            if batch_images is None:
+                break
+
+            total_batch_loss = 0
+            total_batch_iou = 0
+            num_samples = len(batch_images)
+
+            for i in range(num_samples):
+                with torch.amp.autocast('cuda'):
+                    # 设置图像 - 注意需要将Tensor转换为numpy数组并反标准化
+                    img_np = batch_images[i].permute(1, 2, 0).cpu().numpy()
+                    img_np = img_np * np.array([0.229, 0.224, 0.225]) + np.array([0.485, 0.456, 0.406])
+                    img_np = (img_np * 255).astype(np.uint8)
+                    predictor.set_image(img_np)
+
+                    # 获取特征
+                    features = predictor.features
+                    image_embedding = features["image_embed"]
+                    high_res_features = features["high_res_feats"]
+
+                    # 获取原始尺寸
+                    original_size = predictor.orig_hw[0]
+
+                    # 确保输入点的形状正确
+                    points = input_points[i].unsqueeze(0).unsqueeze(0)
+                    labels = input_labels[i].unsqueeze(0).unsqueeze(0)
+
+                    # 编码提示
+                    sparse_embeddings, dense_embeddings = predictor.model.sam_prompt_encoder(
+                        points=(points, labels),
+                        boxes=None,
+                        masks=None,
+                    )
+
+                    # 预测掩码
+                    low_res_masks, iou_predictions, _, _ = predictor.model.sam_mask_decoder(
+                        image_embeddings=image_embedding,
+                        image_pe=predictor.model.sam_prompt_encoder.get_dense_pe(),
+                        sparse_prompt_embeddings=sparse_embeddings,
+                        dense_prompt_embeddings=dense_embeddings,
+                        multimask_output=False,
+                        high_res_features=high_res_features,
+                        repeat_image=False,
+                    )
+
+                    # 后处理掩码
+                    pred_masks = predictor.transforms.postprocess_masks(
+                        low_res_masks,
+                        (512, 512)  # 使用统一的尺寸
+                    )
+
+                    # 计算分割损失
+                    seg_loss = nn.functional.binary_cross_entropy_with_logits(
+                        pred_masks, gt_masks[i].unsqueeze(0)
+                    )
+
+                    # 计算IoU
+                    iou = compute_iou(pred_masks, gt_masks[i].unsqueeze(0)).mean()
+                    score_loss = nn.functional.mse_loss(iou_predictions.squeeze(1), iou.unsqueeze(0))
+
+                    # 总损失
+                    total_loss = seg_loss + 0.01 * score_loss
+
+                    total_batch_loss += total_loss.item()
+                    total_batch_iou += iou.mean().item()
+
+            # 计算平均损失和IoU
+            avg_loss = total_batch_loss / num_samples
+            avg_iou = total_batch_iou / num_samples
+
+            val_losses.append(avg_loss)
+            val_ious.append(avg_iou)
+
+            # 更新进度条
+            val_pbar.set_postfix({
+                'Loss': f'{avg_loss:.4f}',
+                'IoU': f'{avg_iou:.4f}'
+            })
+            val_pbar.update(1)
+
+    val_pbar.close()
+
+    return np.mean(val_losses), np.mean(val_ious)
+
+
+# ===== 主动学习辅助方法 =====
+
+def _collect_uncertain_samples(predictor, full_dataset, uncertainty_threshold, active_sample_ratio):
+    """收集不确定性样本"""
+    uncertain_samples = []
+    predictor.model.eval()
+
+    with torch.no_grad():
+        for record in full_dataset:
+            img = cv2.imread(record['image_path'])
+            if img is None:
+                continue
+
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+            # 计算预测不确定性
+            uncertainty = _compute_sample_uncertainty(predictor, img, record['points'][0][0])
+
+            if uncertainty > uncertainty_threshold:
+                uncertain_samples.append(record)
+                if len(uncertain_samples) >= int(len(full_dataset) * active_sample_ratio):
+                    break
+
+    return uncertain_samples
+
+
+def _compute_sample_uncertainty(predictor, image, point):
+    """计算单个样本的不确定性"""
+    try:
+        predictor.set_image(image)
+
+        # 进行多次预测（使用不同的增强）
+        predictions = []
+        for _ in range(3):
+            masks, ious, _ = predictor.predict(
+                point_coords=np.array([point]),
+                point_labels=np.array([1]),
+                multimask_output=True
+            )
+            predictions.append(masks[0])  # 取第一个mask
+
+        # 计算预测方差作为不确定性度量
+        predictions_stack = np.stack(predictions)
+        uncertainty = np.var(predictions_stack)
+        return uncertainty
+
+    except Exception as e:
+        print(f"不确定性计算错误: {e}")
+        return 0.0
+
+
+def _compute_epoch_uncertainty(predictor, val_loader):
+    """计算整个epoch的平均不确定性"""
+    uncertainties = []
+    val_loader.reset()
+
+    with torch.no_grad():
+        while True:
+            batch_images, gt_masks, input_points, input_labels = val_loader.read_batch()
+            if batch_images is None:
+                break
+
+            for i in range(len(batch_images)):
+                img_np = batch_images[i].permute(1, 2, 0).cpu().numpy()
+                img_np = img_np * np.array([0.229, 0.224, 0.225]) + np.array([0.485, 0.456, 0.406])
+                img_np = (img_np * 255).astype(np.uint8)
+
+                uncertainty = _compute_sample_uncertainty(
+                    predictor, img_np, input_points[i].cpu().numpy()
+                )
+                uncertainties.append(uncertainty)
+
+    return np.mean(uncertainties) if uncertainties else 0.0
+
+
+def plot_training_progress(history, current_epoch):
+    """
+    绘制训练过程中的损失和IoU曲线（Epoch级别）
+    """
+    epochs = range(1, current_epoch + 1)
+
+    plt.figure(figsize=(15, 10))
+
+    # 绘制损失曲线
+    plt.subplot(2, 2, 1)
+    plt.plot(epochs, history['train_loss'], label='Train Loss')
+    plt.plot(epochs, history['val_loss'], label='Validation Loss')
+    plt.title("Loss Curve")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.legend()
+    plt.grid(True)
+
+    # 绘制IoU曲线
+    plt.subplot(2, 2, 2)
+    plt.plot(epochs, history['train_iou'], label='Train IoU')
+    plt.plot(epochs, history['val_iou'], label='Validation IoU')
+    plt.title("IoU Curve")
+    plt.xlabel("Epoch")
+    plt.ylabel("IoU")
+    plt.legend()
+    plt.grid(True)
+
+    # 绘制学习率曲线
+    plt.subplot(2, 2, 3)
+    plt.plot(epochs, history['lr'])
+    plt.title("Learning Rate Schedule")
+    plt.xlabel("Epoch")
+    plt.ylabel("Learning Rate")
+    plt.grid(True)
+    plt.yscale('log')
+
+    plt.tight_layout()
+
+    # 保存图表到run文件夹
+    plot_path = os.path.join(run_dir, "training_progress.png")
+    plt.savefig(plot_path)
+    plt.close()
+    # 同时保存当前状态的图表
+    current_plot_path = os.path.join(run_dir, f"training_progress_epoch_{current_epoch}.png")
+    plt.savefig(current_plot_path)
+    plt.close()
+
+
+def setup_hydra():
+    """正确设置 Hydra 配置路径"""
+    try:
+        GlobalHydra.instance().clear()
+        relative_config_dir = 'D:\sam2\sam2'
+        hydra.initialize_config_dir(
+            config_dir=relative_config_dir,
+            version_base=None
+        )
+        print(f"Hydra initialized with config directory: {relative_config_dir}")
+        return True
+    except Exception as e:
+        print(f"Failed to initialize Hydra: {e}")
+        return False
+
+
+def validate_dataset(dataset_records):
+    """验证数据集是否完整且可访问"""
+    valid_records = []
+
+    for i, record in enumerate(dataset_records):
+        if not os.path.exists(record['image_path']):
+            print(f"警告: 图像文件不存在: {record['image_path']}")
+            continue
+
+        if 'masks' not in record or len(record['masks']) == 0:
+            print(f"警告: 记录 {i} 没有掩码数据")
+            continue
+
+        if 'points' not in record or len(record['points']) == 0:
+            print(f"警告: 记录 {i} 没有点数据")
+            continue
+
+        valid_records.append(record)
+
+    print(f"数据集验证完成: {len(valid_records)} 有效记录, {len(dataset_records) - len(valid_records)} 无效记录")
+    return valid_records
+
+
+if __name__ == "__main__":
+    preprocessed_dir = 'dataset/preprocessed_data'
+    dataset = load_preprocessed_data(preprocessed_dir)
+    dataset = validate_dataset(dataset)
+
+    # 打印缺陷类型分布
+    defect_counts = defaultdict(int)
+    for record in dataset:
+        defect_type = record['defect_type']
+        defect_counts[defect_type] += 1
+    print("Defect type distribution:")
+    for defect_type, count in defect_counts.items():
+        print(f"{defect_type}: {count} ({count / len(dataset) * 100:.1f}%)")
+
+    # 检查数据集是否为空
+    if len(dataset) == 0:
+        print("Warning: No data found in preprocessed directory. Running preprocessing...")
+        dataset = prepare_led_dataset(
+            image_dir='dataset/images',
+            json_dir='dataset/json',
+            output_dir=preprocessed_dir
+        )
+        dataset = validate_dataset(dataset)
+
+        # 生成适配单缺陷图像的JSON标注文件
+        print("Generating JSON annotations for single-defect images...")
+        for record in dataset:
+            img_path = record['image_path']
+            base_name = os.path.splitext(os.path.basename(img_path))[0]
+            json_path = os.path.join('dataset/json', f'{base_name}.json')
+
+            # 创建适配的JSON标注
+            json_data = {
+                "version": "0.3.3",
+                "flags": {},
+                "shapes": [{
+                    "label": record['defect_type'],
+                    "text": "",
+                    "points": record['points'][0],
+                    "group_id": None,
+                    "shape_type": "polygon",
+                    "flags": {}
+                }],
+                "imagePath": os.path.basename(img_path),
+                "imageData": None,
+                "imageHeight": 512,
+                "imageWidth": 512,
+                "text": ""
+            }
+
+            with open(json_path, 'w') as f:
+                json.dump(json_data, f, indent=2)
+
+        print("JSON annotations generated successfully.")
+
+    setup_hydra()
+    trained_model = train_sam2_led(dataset, os.path.join(run_dir, "led_defect_detection_model.pth"))

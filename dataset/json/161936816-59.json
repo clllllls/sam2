@@ -1,0 +1,227 @@
+{
+  "image": "161936816-59.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "XSm14Q`04J6J6N1N2O1000O100O3L6K2N001M3N3O0O3MQjP6"
+      },
+      "area": 283.0,
+      "bbox": [
+        120.0,
+        151.0,
+        20.0,
+        24.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hbn55S`01O1O0O100001O001Nh\\T2"
+      },
+      "area": 68.0,
+      "bbox": [
+        375.0,
+        159.0,
+        10.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lQP63T`03N10O001NdnT2"
+      },
+      "area": 32.0,
+      "bbox": [
+        378.0,
+        107.0,
+        6.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`bc62U`02O001O0002Lim`1"
+      },
+      "area": 26.0,
+      "bbox": [
+        416.0,
+        335.0,
+        7.0,
+        5.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Te^37g?<I7f@WOQ?k0k@WOU?o0N02O1Oc0]O2N3Lkic4"
+      },
+      "area": 248.0,
+      "bbox": [
+        217.0,
+        460.0,
+        11.0,
+        35.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "SkW52S`03O1O1O1O0O2O0100O011N1O2O0O3LVSh2"
+      },
+      "area": 112.0,
+      "bbox": [
+        330.0,
+        264.0,
+        16.0,
+        13.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[el1a0g?a0_OO10000000000000000000000000000000000000000000000000000000O16J;E;ERci5"
+      },
+      "area": 1093.0,
+      "bbox": [
+        119.0,
+        242.0,
+        35.0,
+        35.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kWR61W`02M30LViS2"
+      },
+      "area": 12.0,
+      "bbox": [
+        382.0,
+        266.0,
+        4.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "P\\X51W`02N2N10N10_dl2"
+      },
+      "area": 23.0,
+      "bbox": [
+        331.0,
+        296.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 10,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "jUk58Q`0O01OO4KlZZ2"
+      },
+      "area": 32.0,
+      "bbox": [
+        368.0,
+        314.0,
+        5.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 11,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mXm31W`02M3N1N12N2NYWW4"
+      },
+      "area": 35.0,
+      "bbox": [
+        246.0,
+        363.0,
+        7.0,
+        8.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

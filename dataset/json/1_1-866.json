@@ -1,0 +1,107 @@
+{
+  "image": "1_1-866.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "XoW61V`01O1O1O2M101aFIl28UMIh27YMKd26]MJ`27aMK\\26eMKX26hMLT25nMKP26PNLl15UNMh13ZNMd14\\NN`13bNN[13eNOW12kNOR11oN1n00SO1i00XO2e0N]O3?OA3<MF46NJ43LN6OJ37IK76GJ;7AK?7^OId07ZOIg09UOIl07ROIo09mNHU19hNHX1:eNF]1;_NGa1;[NFf1<UNFm1;oMGQ2<iMFY2;bMH^2:]MHe29WMIi29RMIP39jLJV3:dLH]3;\\LGe3=TLFm3=lKEU4?eKC[4a0^KAd4d0QKAo4e0cJB_5b0TJFl5`0gIGZ6>XIIj6;jHLW79[HNg77kG1V8o32N2O1N2N1O2N2O1N2N2N2N2O1N2N2M3N2M3N2M3M3N2M3N2M3M3M3L5L4L4K5L4K5L4LcQ>"
+      },
+      "area": 12436.0,
+      "bbox": [
+        393.0,
+        106.0,
+        99.0,
+        312.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "USV31W`01O1O1O2N1O1O1O001O001O1O0O20O01O001O00001O006J7I00000001O00001O00001O00000010OO101O00001O001O1N101O001O2N1O1O2N1N3M2M4MnnR4"
+      },
+      "area": 1063.0,
+      "bbox": [
+        201.0,
+        28.0,
+        61.0,
+        31.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "j]>c1Z>i0@:F6M3N2M10M2N3eNnB[OU==[CXOi<a0cCVO`<c0k1Cf`b7"
+      },
+      "area": 1009.0,
+      "bbox": [
+        28.0,
+        203.0,
+        14.0,
+        102.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[^R11U`02N2O100O1O1O010O001O01O10O02N1Oiol6"
+      },
+      "area": 113.0,
+      "bbox": [
+        67.0,
+        423.0,
+        17.0,
+        13.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cfb74S`01N2O1O1O1O1O1O1O1O1O1O13F^X>"
+      },
+      "area": 148.0,
+      "bbox": [
+        477.0,
+        478.0,
+        14.0,
+        17.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

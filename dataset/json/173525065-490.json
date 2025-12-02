@@ -1,0 +1,87 @@
+{
+  "image": "173525065-490.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\ik42T`02N2N201N100O02N1O1OTfV3"
+      },
+      "area": 80.0,
+      "bbox": [
+        306.0,
+        404.0,
+        11.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "jVm41U`03N101O1N01O00\\iV3"
+      },
+      "area": 42.0,
+      "bbox": [
+        309.0,
+        301.0,
+        8.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "djd42T`03M300O1OO101O2N1MmT^3"
+      },
+      "area": 62.0,
+      "bbox": [
+        293.0,
+        40.0,
+        10.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kT_31W`0010O1O001O001O1O001O001O1O001O00100O001O001O1O001O001O1O001O00000001O000000000000000000000000000000000000000000000000O100000000000O10O10000000000000000O100000000000000O10000000O10000000O10000O100O10000O10000O100O10000O1000O010O01000O010O10O10O010O10O10O01O010O10O01O010O1O010O010O1O010O01O01O010O00010O010O00010O01O01O010O00010O0010O00010O01O00010O00000001N100000001O000O10001O000000O00100O1O100O10O01O100O1O100O00100O1O10O001O00010O001O01O01O001O01O00000000N101N2O001N2O1N101O1O1N6K5K5K^dl0"
+      },
+      "area": 5302.0,
+      "bbox": [
+        218.0,
+        311.0,
+        245.0,
+        167.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

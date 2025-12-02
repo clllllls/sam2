@@ -1,0 +1,147 @@
+{
+  "image": "173523321-51.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "afc68P`01O0000O10000O2MXi_1"
+      },
+      "area": 70.0,
+      "bbox": [
+        416.0,
+        465.0,
+        9.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^fX6<g?9M3M1N2O17I2N1O1N3N1O000000O10000000O2O1N1O10O0O10000O100001O00001O00000000O1000O100O101O0O10XmV1"
+      },
+      "area": 606.0,
+      "bbox": [
+        395.0,
+        113.0,
+        48.0,
+        84.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ZRR55S`01N2OO1O2OVnR3"
+      },
+      "area": 37.0,
+      "bbox": [
+        319.0,
+        81.0,
+        6.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ej`42T`0201O10O1OkUd3"
+      },
+      "area": 26.0,
+      "bbox": [
+        285.0,
+        107.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]Z[52T`04N000002NSfi2"
+      },
+      "area": 30.0,
+      "bbox": [
+        337.0,
+        195.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "TUU31U`03O1OO1000000NPkn4"
+      },
+      "area": 28.0,
+      "bbox": [
+        199.0,
+        106.0,
+        8.0,
+        5.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kZP61U`04L20O1O101MbUT2"
+      },
+      "area": 31.0,
+      "bbox": [
+        378.0,
+        391.0,
+        7.0,
+        7.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

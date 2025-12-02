@@ -1,0 +1,67 @@
+{
+  "image": "1715158793(25).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Qbd25P`08H4M201O1OG_@L`?2b@N^?1d@O\\?0e@0[?Nf@2Z?Mh@3X?Lh@4g?0O0010O01O010O0010O010O10O0100O0100O01<DO00100O100M3M8Hjdn4"
+      },
+      "area": 527.0,
+      "bbox": [
+        166.0,
+        265.0,
+        41.0,
+        50.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dQ^51U`02O1N2O2OO10000000000O10O1000000000O1000O100000000000O1000O100000000000O10O11O00000000003MReR2"
+      },
+      "area": 289.0,
+      "bbox": [
+        342.0,
+        378.0,
+        46.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]^j0c0a?32O000O1000000O1N2O2N1N2N2O1O1O1O1O1O1N_nR7"
+      },
+      "area": 292.0,
+      "bbox": [
+        52.0,
+        41.0,
+        21.0,
+        23.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

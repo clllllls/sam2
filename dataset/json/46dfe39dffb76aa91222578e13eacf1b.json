@@ -1,0 +1,67 @@
+{
+  "image": "46dfe39dffb76aa91222578e13eacf1b.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fbo5:n?O100000000000000000001O00001O0001O01O01O00010O00000000000000000001O1O003MaUe1"
+      },
+      "area": 304.0,
+      "bbox": [
+        377.0,
+        142.0,
+        38.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Y[_4<j?2N3M3M2O2OM2H8O2N1O101O000010O0010O01O0100O10O0100O10O03M3N`oX3"
+      },
+      "area": 326.0,
+      "bbox": [
+        282.0,
+        132.0,
+        31.0,
+        36.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Zbc3?h?6I4M3M3N3L3M4MQOVAb0g>ZOcAb0[>[OQB>n>O1O1N1O1O001O1O1O001O2N2N2OVhW4"
+      },
+      "area": 450.0,
+      "bbox": [
+        227.0,
+        297.0,
+        25.0,
+        50.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

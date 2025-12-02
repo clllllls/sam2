@@ -1,0 +1,107 @@
+{
+  "image": "173525095-55.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_l^16R`000000000O101NaSe6"
+      },
+      "area": 43.0,
+      "bbox": [
+        92.0,
+        175.0,
+        8.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Va`24T`02N01O1O000NRoc5"
+      },
+      "area": 31.0,
+      "bbox": [
+        158.0,
+        310.0,
+        7.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "imf21U`04M11O002MhR^5"
+      },
+      "area": 24.0,
+      "bbox": [
+        171.0,
+        94.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\ZW72T`0201N0102LWfm0"
+      },
+      "area": 22.0,
+      "bbox": [
+        455.0,
+        273.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "VPV41W`0000000001N100000001N1000001O000O10001OO10O10000000000O100000000O10000000000O10000O1000000O10000O10O10O1000O01000000O01000O10O10O1000O01000000O01000O10O0100O100O00100O10O010O010O010O01O010O010O010O0010O00010O01O010O0010O01O010O0010O01O010O0001O01O01O00001O01O000000000O2O00000000O100000O0100000000O100000O01000000O100000000O1000000O100O1N2N2N2M3N2N2NQiX1"
+      },
+      "area": 2684.0,
+      "bbox": [
+        263.0,
+        362.0,
+        176.0,
+        105.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

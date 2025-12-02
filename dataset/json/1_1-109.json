@@ -1,0 +1,67 @@
+{
+  "image": "1_1-109.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oS>4P`07L2O01O01O0O1010N101N2IQ[c7"
+      },
+      "area": 149.0,
+      "bbox": [
+        27.0,
+        418.0,
+        13.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "QSj5b0g?a0^O0000000000000000000000000000000000000000000000000000000000000000000000000009Ga0_Odch1"
+      },
+      "area": 1418.0,
+      "bbox": [
+        366.0,
+        241.0,
+        42.0,
+        36.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "__g53R`030001O0O21LmP]2"
+      },
+      "area": 43.0,
+      "bbox": [
+        361.0,
+        163.0,
+        7.0,
+        9.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

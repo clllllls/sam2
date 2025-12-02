@@ -1,0 +1,30 @@
+{
+  "annotations": [
+    {
+      "segmentation": {
+        "counts": [
+          201411,
+          6,
+          201931,
+          6,
+          202450,
+          7,
+          202970,
+          7,
+          203492,
+          3,
+          204013,
+          1
+        ],
+        "size": [
+          520,
+          520
+        ]
+      },
+      "area": 30,
+      "label": "baiwu",
+      "image_id": "161947764-109_defect_4_baiwu",
+      "uncertain_iou": 1.0
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "image": "1_1-39.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cQT61U`04M2O1O001N100000O10000000000000000000000O10001N1NRjf1"
+      },
+      "area": 210.0,
+      "bbox": [
+        386.0,
+        31.0,
+        26.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Wcj5a0g?b0^O000000000000000000000000000000000000000000000000000000000000000000000006J<D<Ebch1"
+      },
+      "area": 1364.0,
+      "bbox": [
+        367.0,
+        239.0,
+        41.0,
+        36.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kh?5S`02N000001O0000001O000010O2O1N10001O01O1O1O1O2KeR\\7"
+      },
+      "area": 161.0,
+      "bbox": [
+        31.0,
+        35.0,
+        24.0,
+        21.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

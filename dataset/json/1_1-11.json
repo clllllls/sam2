@@ -1,0 +1,47 @@
+{
+  "image": "1_1-11.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lin3R1V?0000000000000000000000000000000000000000000000000000000000000000000a0_Ocnf3"
+      },
+      "area": 1207.0,
+      "bbox": [
+        249.0,
+        372.0,
+        36.0,
+        34.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "afY61W`02M1O2O1M2M4M1O1O2O01O100O0Cdhf1"
+      },
+      "area": 155.0,
+      "bbox": [
+        397.0,
+        90.0,
+        15.0,
+        21.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

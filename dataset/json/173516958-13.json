@@ -1,0 +1,107 @@
+{
+  "image": "173516958-13.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Q\\`0a0o0P1[OCX;c3K5L3M4N0O2O0O2O10O01O1O1O100O1O100O1O1O100O01N2M3N2M3M3L4K5M3L4H9I6M3K5L5J5K5M3M3M3M3N2M4M2N2O1N3M2N3K5J5L5M2M3M4M2N3M2O2M2N3L3N3M3N2N1O2N1O2N1O2M2N3M3M3N2M^R_6"
+      },
+      "area": 8400.0,
+      "bbox": [
+        32.0,
+        95.0,
+        80.0,
+        180.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\Sa6=?Mc>Q1K2N2N00N2M?YOa0Fn[b1"
+      },
+      "area": 320.0,
+      "bbox": [
+        411.0,
+        404.0,
+        9.0,
+        47.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "li\\62T`02O11O01ONhVh1"
+      },
+      "area": 23.0,
+      "bbox": [
+        403.0,
+        161.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cj^54T`01O1N2]Vg2"
+      },
+      "area": 23.0,
+      "bbox": [
+        344.0,
+        146.0,
+        4.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Wni42U`03M100000O3MRbZ3"
+      },
+      "area": 32.0,
+      "bbox": [
+        303.0,
+        77.0,
+        7.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

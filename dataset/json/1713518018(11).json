@@ -1,0 +1,27 @@
+{
+  "image": "1713518018(11).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "gdj0R1P?a0_O=E6L5K4L5K4L5K4M3L4M3M2N3M3L4M2N3M3L3N3M\\MWDm0f;kNkDn0S;iN_EQ1]:hNUFQ1h9gNiFS1T9cN_GV1o;L000O1N3N1O1N2O1N3N1N2O1O2M2O1N2O2M2O1O1N2O2M2O1N2OTla6"
+      },
+      "area": 3255.0,
+      "bbox": [
+        52.0,
+        197.0,
+        54.0,
+        168.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

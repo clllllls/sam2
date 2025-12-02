@@ -1,0 +1,107 @@
+{
+  "image": "1_1-3999998888687 (30).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "Una23[<2O1O00000O0101O00000000000010O01O01O01O001000O0100O10000000O1000000000000001O0000000101O0O100000000000001O1O2O0O02L_Xc1"
+      },
+      "area": 293.0,
+      "bbox": [
+        209.0,
+        288.0,
+        59.0,
+        25.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "on;2<1U;]1`DdNg:f1M0100001O1O00O1N2O1O1O1O1000O01N2O2O00010O1O2N4LkDhNV;W14IfDPO\\;n05N201N0O2N2N3N02O1O0000O1N10001N2N1O1N2O10001O01O0O102N8H1O0000O2ORE^Om9b0gE[OE9d:;cE0]:1aE0_:1^E3_:o01O2O000O001N3N1O0O2O100O001O1O1O1O00100O1O01OO2O1O1N2O001N2H8E=L8IggX3"
+      },
+      "area": 3810.0,
+      "bbox": [
+        30.0,
+        236.0,
+        101.0,
+        134.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "^]`21_<2N2M101O00001O001O2N6J2N2OO5L2M3M2M3MTPT2"
+      },
+      "area": 199.0,
+      "bbox": [
+        205.0,
+        349.0,
+        20.0,
+        22.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "\\Q]41_<1O2N2N2N3M2N001O1cY;"
+      },
+      "area": 87.0,
+      "bbox": [
+        361.0,
+        28.0,
+        10.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "Rmo32\\<5L02O000O3L`ci0"
+      },
+      "area": 34.0,
+      "bbox": [
+        327.0,
+        175.0,
+        7.0,
+        8.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

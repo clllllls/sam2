@@ -1,0 +1,107 @@
+{
+  "image": "144627484-89.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mSP72U`04L101O1O0000000000000000000000000000000000O1000O1000000000O10000000O11O0000000000000000000000000001O00000005KQ`;"
+      },
+      "area": 464.0,
+      "bbox": [
+        441.0,
+        177.0,
+        56.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Ql>6R`02N2NO10O1000000O01000000O1000000O1000000000000000O10010O2O0O0011O1N000001OO100000000000001O0000000000010O00001O001O003M]Vj6"
+      },
+      "area": 532.0,
+      "bbox": [
+        29.0,
+        150.0,
+        61.0,
+        16.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]`j3e0m>e02O0000000000000000000000000000000000000000000000000000000000000000000000000000e0[OSWh3"
+      },
+      "area": 1682.0,
+      "bbox": [
+        241.0,
+        111.0,
+        42.0,
+        43.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Sk\\42V`02M100O100O100O10O010000000000000000100O1O1O3NjP_3"
+      },
+      "area": 158.0,
+      "bbox": [
+        277.0,
+        182.0,
+        24.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "XoV25S`0001OO3L`an5"
+      },
+      "area": 22.0,
+      "bbox": [
+        139.0,
+        400.0,
+        5.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

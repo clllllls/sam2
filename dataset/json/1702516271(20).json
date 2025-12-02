@@ -1,0 +1,47 @@
+{
+  "image": "1702516271(20).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "xian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oo]33S`03M2N201N00100O0010N1M30O100001O000O11O00000000O02O0O11N10O10000000O1000O2O00O1O1000000000000000O01000O11O000000O10000000O1000000000O11OO11O00O10000O1000O1000000000000O100000000000000000O1001OO011O0000O10O1O100000O1000O001N3O01O00001O1O2N2O1N2MXgk2"
+      },
+      "area": 1075.0,
+      "bbox": [
+        216.0,
+        190.0,
+        123.0,
+        134.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kQU74R`05L3N2N1O1O1O1O1O001O001O00001O0000000000000000O10000000000000000000000O10000000001O000O2Lid;"
+      },
+      "area": 886.0,
+      "bbox": [
+        451.0,
+        32.0,
+        46.0,
+        22.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

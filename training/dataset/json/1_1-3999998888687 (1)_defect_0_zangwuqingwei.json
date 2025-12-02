@@ -1,0 +1,34 @@
+{
+  "annotations": [
+    {
+      "segmentation": {
+        "counts": [
+          14141,
+          1,
+          14541,
+          14,
+          14941,
+          15,
+          15340,
+          17,
+          15740,
+          18,
+          16140,
+          17,
+          16544,
+          11,
+          16947,
+          7
+        ],
+        "size": [
+          400,
+          400
+        ]
+      },
+      "area": 100,
+      "label": "zangwuqingwei",
+      "image_id": "1_1-3999998888687 (1)_defect_0_zangwuqingwei",
+      "uncertain_iou": 1.0
+    }
+  ]
+}

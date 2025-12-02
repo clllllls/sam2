@@ -1,0 +1,47 @@
+{
+  "image": "1_1-225.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_Wc34S`02O0O100000O100O3LSh_4"
+      },
+      "area": 55.0,
+      "bbox": [
+        226.0,
+        477.0,
+        10.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Pe<:j?3O21O2N1O1O1O2N1O1O001N10[Yd7"
+      },
+      "area": 123.0,
+      "bbox": [
+        24.0,
+        474.0,
+        14.0,
+        16.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

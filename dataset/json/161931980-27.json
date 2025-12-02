@@ -1,0 +1,227 @@
+{
+  "image": "161931980-27.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kaS36R`06J2N1c@Fj>Q1K3ON3M2N2O0O2Ne0\\Okkm4"
+      },
+      "area": 345.0,
+      "bbox": [
+        196.0,
+        27.0,
+        13.0,
+        43.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "idY54S`0=D1O1O1OD`@2l?10L3M3MTZi2"
+      },
+      "area": 119.0,
+      "bbox": [
+        334.0,
+        40.0,
+        10.0,
+        25.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ZXa5<k?8H201O2<EN4J4OO3^O^@6k?0ON4LWU`2"
+      },
+      "area": 208.0,
+      "bbox": [
+        349.0,
+        32.0,
+        13.0,
+        47.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[^R54n?<A>J6J6K3OoN^A7_?K5K7I\\`P3"
+      },
+      "area": 229.0,
+      "bbox": [
+        319.0,
+        450.0,
+        10.0,
+        45.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kha32V`03M2N1O1O000000001OO1O100O1N2MXU^4"
+      },
+      "area": 116.0,
+      "bbox": [
+        224.0,
+        27.0,
+        16.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "TZW55S`01N2O0000000000O2N]ek2"
+      },
+      "area": 71.0,
+      "bbox": [
+        329.0,
+        251.0,
+        10.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oWn08P`01O1O00000O0100O010O1O010O100O1O100O1O100O1O]Tn6"
+      },
+      "area": 175.0,
+      "bbox": [
+        59.0,
+        292.0,
+        23.0,
+        13.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "WTl5P1X?00000000000000000000000000000000000000000000000000000000000O1a0_OQUk1"
+      },
+      "area": 1041.0,
+      "bbox": [
+        370.0,
+        246.0,
+        33.0,
+        33.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "V\\P41W`02M3N2M3OO002N3K`SS4"
+      },
+      "area": 60.0,
+      "bbox": [
+        252.0,
+        420.0,
+        9.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 10,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "TTc23V`01N1ONmlb5"
+      },
+      "area": 15.0,
+      "bbox": [
+        163.0,
+        364.0,
+        4.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 11,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "a_[62W`02M001O02Nl`i1"
+      },
+      "area": 23.0,
+      "bbox": [
+        400.0,
+        369.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "image": "161933533-33.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mW_4<\\?g0H1O11N1@QAGQ?1`Ye3"
+      },
+      "area": 195.0,
+      "bbox": [
+        282.0,
+        27.0,
+        7.0,
+        37.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cT]43Q`05J5E;C=00O11N2L6AVle3"
+      },
+      "area": 245.0,
+      "bbox": [
+        277.0,
+        457.0,
+        10.0,
+        38.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "SSb73Q`04L4I7I8J4N3N1O1O2N10O10000O1L]l="
+      },
+      "area": 451.0,
+      "bbox": [
+        476.0,
+        344.0,
+        16.0,
+        47.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^Vc5`0`?8K6L4L2O1O1O1O11O0VOj0O2O00001O1O1M3LmW[2"
+      },
+      "area": 418.0,
+      "bbox": [
+        352.0,
+        431.0,
+        19.0,
+        49.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "nQn52T`04L4O0O010OO3NRnU2"
+      },
+      "area": 64.0,
+      "bbox": [
+        374.0,
+        138.0,
+        8.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "gTl5b0T?b00000000000000000000000000000000000000000000000000000000000000000000000006J<D<DeRg1"
+      },
+      "area": 1404.0,
+      "bbox": [
+        370.0,
+        245.0,
+        41.0,
+        36.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "image": "144700793-176.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]a=1T`03N2N2000001OO100000000000001O0000000000000000000000000000000000000001O000000000000000000000000000001O000O4Lnbn6"
+      },
+      "area": 398.0,
+      "bbox": [
+        26.0,
+        342.0,
+        55.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ghn62R`04N20001O0000001O0O110OO101O00000000000000000000000O100000O1000000000000001O00000000000000000000000010OO100O3N[k<"
+      },
+      "area": 470.0,
+      "bbox": [
+        438.0,
+        352.0,
+        56.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "URk06l?8M3N2M3M2O1N2N2N2M3N001000000O0100000O1000O10O10000O01N2N1O2N2N2N1O2N2N1O2N2N1O2N2N1Kjef6"
+      },
+      "area": 1184.0,
+      "bbox": [
+        53.0,
+        132.0,
+        44.0,
+        45.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[`a06R`000000O101O000O10000O2O0O10000N3M1O1O02O001O0O2N1O4L4KS[X7"
+      },
+      "area": 298.0,
+      "bbox": [
+        34.0,
+        236.0,
+        28.0,
+        24.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[gg35j?9G9F:G9K51O0000000000000000000000000000000001O00000001O000000000000000000000000000000000001OH8@`0Alof3"
+      },
+      "area": 2126.0,
+      "bbox": [
+        235.0,
+        361.0,
+        50.0,
+        49.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

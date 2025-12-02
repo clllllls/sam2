@@ -1,0 +1,107 @@
+{
+  "image": "1_1-51.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "h\\g51X`00O1O1O1O2N1O1O100O10O0100O100O010O100O00100O100O010O100O10O010000O100O1000O010000O100O10000O100O01000O1000000O1000001O0O10000000001N1000001O1N2O1O1O00100O1O100O1O100O1O1O100O1O2O0O1O100O1O106J<C<E<C>C`0@7HO2O001L4L4L5K4K6H8H7I8G9G8H;E<D=C<DmRc0"
+      },
+      "area": 4262.0,
+      "bbox": [
+        361.0,
+        80.0,
+        121.0,
+        211.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lUa73Q`05N101O00000001O1O000O10001O0OWh>"
+      },
+      "area": 127.0,
+      "bbox": [
+        474.0,
+        487.0,
+        16.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "je=3P`04N31O000000001O001O00001O2N`hb7"
+      },
+      "area": 112.0,
+      "bbox": [
+        26.0,
+        482.0,
+        15.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[Sa08P`0O1000O01000O01000000O1N4MVk_7"
+      },
+      "area": 89.0,
+      "bbox": [
+        33.0,
+        353.0,
+        14.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fUb11V`01O2N1O2O1O001O00001O0003Njh^6"
+      },
+      "area": 100.0,
+      "bbox": [
+        98.0,
+        418.0,
+        14.0,
+        11.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

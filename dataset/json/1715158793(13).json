@@ -1,0 +1,47 @@
+{
+  "image": "1715158793(13).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]TU4;i?9J7J3OTOl@W1k>L5J5L3I=BXjm3"
+      },
+      "area": 252.0,
+      "bbox": [
+        262.0,
+        88.0,
+        10.0,
+        53.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "P^g24S`02O00000iR^5"
+      },
+      "area": 28.0,
+      "bbox": [
+        172.0,
+        95.0,
+        5.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

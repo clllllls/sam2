@@ -1,0 +1,87 @@
+{
+  "image": "1_1-3999998888687 (47).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "eTn32\\<2M3N2O1O1O1O100O1O100000000000000000000O100O1N2N2TO@fEb0U:EgE=V:IeE9Y:N`E4_:o0O1N2O1O1O1O1O1N2O1O1O1O1O1N2O1O1O1d0\\OX1hNmb:"
+      },
+      "area": 1856.0,
+      "bbox": [
+        322.0,
+        295.0,
+        50.0,
+        80.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "iXT11`<0O3M4L1O1000001O2N2O0000O0O2N3M3Mbm`3"
+      },
+      "area": 173.0,
+      "bbox": [
+        92.0,
+        345.0,
+        18.0,
+        26.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "Plo1`0Q<1N2O0O1O1>B0001O0001O1O1LWlf2"
+      },
+      "area": 165.0,
+      "bbox": [
+        163.0,
+        208.0,
+        14.0,
+        31.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "T_e36[<O00000001O0001O0001O00001O000100N2N2Ngnn0"
+      },
+      "area": 109.0,
+      "bbox": [
+        300.0,
+        292.0,
+        20.0,
+        10.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

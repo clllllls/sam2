@@ -1,0 +1,127 @@
+{
+  "image": "161933507-32.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ih`3<g??B6L1O1O20VORA9o>Cm0Magb4"
+      },
+      "area": 220.0,
+      "bbox": [
+        222.0,
+        26.0,
+        9.0,
+        39.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Tf`3;]?g0E6ON100O3N?PO_Zc4"
+      },
+      "area": 236.0,
+      "bbox": [
+        221.0,
+        456.0,
+        8.0,
+        40.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Vi]24R`05L2O2N1O000O1N3N10000O100001L9Gfda5"
+      },
+      "area": 252.0,
+      "bbox": [
+        153.0,
+        86.0,
+        17.0,
+        20.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "QlY42T`0201N2O1O000001N2NaSi3"
+      },
+      "area": 60.0,
+      "bbox": [
+        271.0,
+        262.0,
+        10.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "]fU74S`03N3M1O1O00100O10O001O1N3LPXk0"
+      },
+      "area": 150.0,
+      "bbox": [
+        452.0,
+        172.0,
+        14.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_Um1c0e?d0\\OO1000000000000000000000000000O100000O10000000000000000000000000O17I=C<DSbg5"
+      },
+      "area": 1374.0,
+      "bbox": [
+        120.0,
+        237.0,
+        38.0,
+        41.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

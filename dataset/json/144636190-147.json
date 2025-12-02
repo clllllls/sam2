@@ -1,0 +1,127 @@
+{
+  "image": "144636190-147.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "maS33R`06M2N1Od0\\O3M3L33M1N1O1O1UOWA2d?L_[m4"
+      },
+      "area": 345.0,
+      "bbox": [
+        196.0,
+        25.0,
+        14.0,
+        46.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dmQ5288\\?K_@=Z??I6L3L3M05oNXA8`?L5L4I``P3"
+      },
+      "area": 304.0,
+      "bbox": [
+        318.0,
+        450.0,
+        11.0,
+        47.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`TY53U`0<D4K3O1N2N28H00O0100O1O2N2N2OmNMoA2n=5oAJo=?kA_OV>b0jA\\OV>h0fAYOY>l0cASO`>m0^ASOm>f0n@ZOW?j03L3M3M5K6Jnd_2"
+      },
+      "area": 684.0,
+      "bbox": [
+        333.0,
+        32.0,
+        30.0,
+        53.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Zib31X`01N3M3M2NO10000N2N2O2MfU_4"
+      },
+      "area": 70.0,
+      "bbox": [
+        226.0,
+        26.0,
+        12.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "iiV55S`03M001O1O0001O0000001N1O1OfTj2"
+      },
+      "area": 114.0,
+      "bbox": [
+        328.0,
+        249.0,
+        14.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Xbh5Z1n>0000000000000000000000000000000000000000000000000000000000000000000000000000001OZOnUj1"
+      },
+      "area": 1744.0,
+      "bbox": [
+        363.0,
+        240.0,
+        42.0,
+        43.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "image": "1702625126(6).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Z^>;^?e0]Oc0_Oa0D:LO1O1O1O001O1O1O1O001O100O1O001O00001O00001N1N3M2N2M4M2N2N3K4J<C`0Aj[V7"
+      },
+      "area": 2245.0,
+      "bbox": [
+        28.0,
+        176.0,
+        38.0,
+        91.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "klP52T`05K5L3N3L4M2N0O2O0O2O0O2O001N101N101N0100O010O010O00100O010O010O00100O0010O01O0101O2M2O1N2O2M2O1O2M2O1N1O100O1O100O1O100O1O100O0001O00010O00001O000010O0001O0001O0O101O0O2O001N10001N101O0O2O000O2OO1N3L4M3H8B=[Ojma1"
+      },
+      "area": 4688.0,
+      "bbox": [
+        316.0,
+        372.0,
+        105.0,
+        96.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mlf62W`01N2O2M2O2M2O1N3N1N2O1N2N2O1N101N2O1N101N2O1O1N2O2N2N2N2M3N2N2N2N2M3bEUNZ6m1_IVNb6m1XIVNh6m1RIVNn6m1kHWNU7l1eHWN[7o1[HUNe7S2PHPNP8X2dGlM\\8\\2YGgMg8a2nFbMQ9g2cF]M^9j2WFYMi9o2kEUMU:_40O2M2O1O1N3N1N2M3L6K5K5I7H8H8UOn0ROQ1A>B>A`0A>B]a="
+      },
+      "area": 5536.0,
+      "bbox": [
+        423.0,
+        101.0,
+        70.0,
+        211.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\mh21V`0001O1O1O100O1O1O1O001O1O1O1O1O1O100O1O001O1O001000O10O10O10O10O1000O10O10O10O1000O01000O0100000O01000O0100000O01000O0100000O010000O1000000O10000O1000O100000000000000000000000000O1000000000000000000000000O11O000000000000000000000000010O0001O00001O00001O00001O0010O0010O00010O01O01O01O010O00100O0010O01O10O01O010O00100O010O2N101N1O2O0O2N2O1N2N2OZYg2"
+      },
+      "area": 2793.0,
+      "bbox": [
+        175.0,
+        16.0,
+        173.0,
+        38.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

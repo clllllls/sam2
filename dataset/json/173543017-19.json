@@ -1,0 +1,147 @@
+{
+  "image": "173543017-19.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\eg2<l?001O001O001O00001O0010O1O10010O0O2O1N3M3McVU5"
+      },
+      "area": 300.0,
+      "bbox": [
+        172.0,
+        332.0,
+        22.0,
+        22.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lSl03S`04L4ON10000O3N4Li[W7"
+      },
+      "area": 64.0,
+      "bbox": [
+        55.0,
+        192.0,
+        9.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "k\\Q76Q`01N200001O1O3LTcR1"
+      },
+      "area": 58.0,
+      "bbox": [
+        443.0,
+        448.0,
+        8.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Xgd53T`02O000O0100O2O0Obh^2"
+      },
+      "area": 37.0,
+      "bbox": [
+        355.0,
+        462.0,
+        9.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Unl51V`02N1O2N2O1OO100000O12L4Lf`T2"
+      },
+      "area": 78.0,
+      "bbox": [
+        372.0,
+        32.0,
+        13.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`cW41W`00O2O1N110O1O001O1O000000000000000000000000000000000001O0001O00000000000000000000000000001O000000000001O00000000000001O000000000000000000000000000001O000000000000000O1000000000000000000O1O1O100O1OgU^2"
+      },
+      "area": 745.0,
+      "bbox": [
+        267.0,
+        22.0,
+        99.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hXa21W`0001O00001O001O001O0000000000000O100000000000001O000000000000000000000000000000000000000000000000001O000000000000000000000000000000001O0000001O00001OO10000000000000000000000000002JcbX4"
+      },
+      "area": 653.0,
+      "bbox": [
+        160.0,
+        23.0,
+        91.0,
+        11.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

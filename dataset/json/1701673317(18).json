@@ -1,0 +1,87 @@
+{
+  "image": "1701673317(18).bmp",
+  "width": 520,
+  "height": 517,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "kWm26m?7I2O1O1O10001O0001N5DkWS5"
+      },
+      "area": 182.0,
+      "bbox": [
+        184.0,
+        348.0,
+        12.0,
+        19.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "hQd55l?=F3M2O1O0010O10O001O0010O2N100O1O2N01O0100000O010000O001O1O1N2O0O4J4N[YP2"
+      },
+      "area": 708.0,
+      "bbox": [
+        356.0,
+        318.0,
+        36.0,
+        35.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "heY63Q`01O100O010O1O010O1O00100O0N2N210O000001O000010O010O1O001O001O0000000001O000010O01O3M6J`eV1"
+      },
+      "area": 442.0,
+      "bbox": [
+        399.0,
+        203.0,
+        44.0,
+        37.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "UfT62n?5N2M2O2N2O0100N2O8EhYl1"
+      },
+      "area": 113.0,
+      "bbox": [
+        389.0,
+        285.0,
+        11.0,
+        17.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

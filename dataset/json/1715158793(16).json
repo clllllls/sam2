@@ -1,0 +1,67 @@
+{
+  "image": "1715158793(16).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "g\\Q41V`03M3N2O0O3O2N1O20N2N002M2O1OO01O1O1Mbol3"
+      },
+      "area": 180.0,
+      "bbox": [
+        254.0,
+        421.0,
+        19.0,
+        38.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "l\\`56Q`02O1O01N2Occd2"
+      },
+      "area": 45.0,
+      "bbox": [
+        347.0,
+        195.0,
+        6.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oci43S`03O0O11O0O2O1OQ\\Z3"
+      },
+      "area": 40.0,
+      "bbox": [
+        302.0,
+        268.0,
+        8.0,
+        7.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "image": "1702516271(35).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "xian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Za`34R`03N2N2O001N001O1O0001OO10N2N110O100O010O110O0001OO01000O1000O10O10000000O0100000000O10O10000000O11N10000O11N100000000000O10000O10O1000000O100000000000O10000000O10000000000000O100000O1O010001OO2OO100000O1000O101N11O0O01O1O1O1O10O101O100O2O001OWfi2"
+      },
+      "area": 1194.0,
+      "bbox": [
+        221.0,
+        191.0,
+        122.0,
+        139.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cPb04R`07I8H7H8I8H7I6I5L4L5K4J6H9G8H8J6K4L4L4M3L4L4L4MgMgDHV;6aEYO[:e0oEVOn9g0\\FUOa9i0iFROT9l0UGPOh8m0bGoN[8o0oGlNn7R1[HjNc7S1gHhNW7V1o3N1N2N2N3N1N2N2O2M2O1O1O1O2N1O1O1O2N1O1O6Jdfi6"
+      },
+      "area": 3146.0,
+      "bbox": [
+        35.0,
+        146.0,
+        56.0,
+        183.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ZW[61W`01N2O2M2O1N2O1N3O0O10000O2O0O100O101O0O10000010O0000010O2O2M2O1N10O1O010O001O001O100O1O2N1O1O2N100O1O2N100O2N100O2O2M3N2M3M3N2M3`CaNQ:a1_EnN_:U1QEVOQ;o23L4M4L3L4M3M3L4M3M3L4M3J6H8G=Da0[Od0ZOkaa0"
+      },
+      "area": 3263.0,
+      "bbox": [
+        400.0,
+        102.0,
+        85.0,
+        205.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

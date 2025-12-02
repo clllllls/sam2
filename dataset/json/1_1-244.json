@@ -1,0 +1,87 @@
+{
+  "image": "1_1-244.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "iYY14Q`03L4I60O110N2N2M3O1000O0]Od0N2O001O01O01O1O0O101O1OO001O0100000000000010N11O00000O101O01O01N1000100O00010000O01O01O1O01O01O0001N1O1010O01O1O00001O01O1O01O1O00001O0100O01O1O1O100O10O00010O10O0000010O0O11O01O10O1O01O001O000010O01O1O1N3M3N2N2N1O1O2Mg\\P5"
+      },
+      "area": 3177.0,
+      "bbox": [
+        81.0,
+        70.0,
+        123.0,
+        111.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "QlU2?^=LTDg0];O`CADe0]<b2M2N3M3M3M200O100O100O101N10000000000O10000000000O11O0000000000000O100000000001OO10000001O001O000000000000000000001O1O1O1O2N2N1O1O1O1N200O0010O01O1O1O2N1O1O1O1O2N1O1O5L1N2N2bE`JM4f9W6NO1O10000000000000000O1N2O1N11O1O1O1O10000O1N2O1O11O0000O1O110OO2N10001O010O101N1O1O1O0O1N2001O1O00000000O1O1O100O100000O1O01O010KmESJU:l5400N2L4N1O3M2A^EVKd:e4bEXK`:f4b0O1O1000000N2N2N2N2N2N2000000O1000000000000000000000O100O1O100O1O100003M3M1O1O1O1O1O1O2N2N3M2N2N3M2N2N1O1O1O1O2N1N2O1O1N2O001M2N2_MQC[1^=bNeB[1^=bNfBMER1h=kNiB0_l[2"
+      },
+      "area": 36486.0,
+      "bbox": [
+        137.0,
+        192.0,
+        234.0,
+        216.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "SYP1>k?6I5L2M2O1O2N19D5L7I7IkdQ7"
+      },
+      "area": 261.0,
+      "bbox": [
+        63.0,
+        299.0,
+        12.0,
+        38.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\R[22T`02N3O1O000001O0000000010O010O00010O010O00010O0010O00010O01O01O01O010O01O01O01O001O1O1OYdV5"
+      },
+      "area": 308.0,
+      "bbox": [
+        147.0,
+        432.0,
+        44.0,
+        19.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

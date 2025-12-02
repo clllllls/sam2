@@ -1,0 +1,187 @@
+{
+  "image": "1_1-3999998888687 (25).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "og=6Z<000O2OO010O10O01O010O10O010O10O10O10O010000O010O1000O01000O010O1000O01000O10000O10000000000O100000000O100000001O00001O001OO10O0;FYgd3"
+      },
+      "area": 552.0,
+      "bbox": [
+        35.0,
+        61.0,
+        66.0,
+        25.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "]j;:V<3L010O10O010000O100O010O010O001O0100O010O10O10O10O01O1O001O010O001O1O010O001O0O4M3Lcdo3"
+      },
+      "area": 557.0,
+      "bbox": [
+        30.0,
+        91.0,
+        43.0,
+        31.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "[R;6T<8N2N1OO10001O1O0O3M4M4KQS\\4"
+      },
+      "area": 162.0,
+      "bbox": [
+        28.0,
+        133.0,
+        13.0,
+        17.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "bS;;P<;UD\\Ob01P:l0mEYOo9i0oEXOQ:j0lEXOS:i0lEXOS:j0jEXOU:i0fE\\OZ:]1O100O10OH9O0O2OO1N101K5I7POo0K6O1N2N2O1N2N2N2O1O100O10000ObgR4"
+      },
+      "area": 1464.0,
+      "bbox": [
+        28.0,
+        128.0,
+        37.0,
+        102.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "o]:c2l9100O1O1O11O0000001O1O0nMXF=NNl9_O\\F=M3i9XObF`0J6]:EfE:\\:BgE=[:_OhE`0Z:\\OiEc0T;N1N2O1O2N2N1O2N1O2N3MbPV4"
+      },
+      "area": 1479.0,
+      "bbox": [
+        26.0,
+        283.0,
+        30.0,
+        87.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "kQj0a0P<1O1N2O1O1O100O0000000001O0001O01O0000000000000O10O1000O1000000O10O1000O10O1000O1000O10O1000O10O10O10O10O01O10O0100O00100O010O00100O010O10O10O10O010O1O010O01O000010O01O000010O01O000010O01O000010O01O00001O0001O0000000000001O01O00000000000000000000000001O0000000000001OO100000000000000000000000000O10O100000000000000O10000000O100000O10O100000000O10O1000O0100O1000O0100O1000O0100O100O010O01O01O01O010O0010O010O01O010O010O0010O0010O0010O01O010O0001O00001O01O0O10000O100O3K6KQoU1"
+      },
+      "area": 3902.0,
+      "bbox": [
+        66.0,
+        283.0,
+        236.0,
+        89.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "S_f12\\<3O1O0002Lo]S3"
+      },
+      "area": 27.0,
+      "bbox": [
+        139.0,
+        177.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "gmV24W<6O1O2N11O1O1O2L5KR]a2"
+      },
+      "area": 97.0,
+      "bbox": [
+        181.0,
+        226.0,
+        10.0,
+        17.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "mTl02^<2N2N2N2N2N2N2N1O1O1O1O2N1O1O1O1O00000000000000000000O100O10000O100O10000O100O100O10O0100O100N2L4M3O1000000001O00000000001O00000000001O001O1O001O001N20O01000O010O1O00100O00100O001O10O01O2O0O2N2N101N1O2O[Wh2"
+      },
+      "area": 1566.0,
+      "bbox": [
+        72.0,
+        27.0,
+        102.0,
+        28.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

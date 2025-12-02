@@ -1,0 +1,107 @@
+{
+  "image": "169_134030_738.bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "nP=1^<2N110O1O001O000010O01O0010N3M3N]bX4"
+      },
+      "area": 85.0,
+      "bbox": [
+        33.0,
+        140.0,
+        17.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "mac08Y<O01O0010O0000000001OO100O10001M2NReQ4"
+      },
+      "area": 132.0,
+      "bbox": [
+        50.0,
+        29.0,
+        18.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "mk[34]<0O1O1O1O000KLnC5Q<501OO10O12N3M4JQTZ1"
+      },
+      "area": 142.0,
+      "bbox": [
+        276.0,
+        56.0,
+        16.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "]`\\22^<4L2N2nCHh;:TDHl;?N1100OO1N2N21O01O001O0001O00000H]DDc;8<O100O3JVVU2"
+      },
+      "area": 474.0,
+      "bbox": [
+        195.0,
+        345.0,
+        27.0,
+        27.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "jSe3:U<001O001OO3M2N3N2MZWS1"
+      },
+      "area": 84.0,
+      "bbox": [
+        299.0,
+        325.0,
+        10.0,
+        15.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

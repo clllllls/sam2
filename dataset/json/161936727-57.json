@@ -1,0 +1,67 @@
+{
+  "image": "161936727-57.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^W_49m?8J6J7H5NM5L4K6KnWd3"
+      },
+      "area": 215.0,
+      "bbox": [
+        282.0,
+        27.0,
+        9.0,
+        35.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "VU_4?e?4L5L3K6J5000H8H8L6JiZc3"
+      },
+      "area": 276.0,
+      "bbox": [
+        281.0,
+        457.0,
+        11.0,
+        38.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^dl5Q1X?O000000000000000000000000000000001O01O00000000000000000000000000000009G`0AVSh1"
+      },
+      "area": 1183.0,
+      "bbox": [
+        371.0,
+        246.0,
+        38.0,
+        35.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

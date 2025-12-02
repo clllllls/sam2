@@ -1,0 +1,30 @@
+{
+  "annotations": [
+    {
+      "segmentation": {
+        "counts": [
+          50244,
+          5,
+          50764,
+          7,
+          51284,
+          7,
+          51804,
+          6,
+          52324,
+          6,
+          52846,
+          1
+        ],
+        "size": [
+          520,
+          520
+        ]
+      },
+      "area": 32,
+      "label": "zazhi",
+      "image_id": "144631306-119_defect_8_zazhi",
+      "uncertain_iou": 1.0
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "image": "169_143202_347.bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "[bS41_<1O2M6L000O11O2N1N0100O010O000001O10O010O0100O010O01O01O010O01OO2N1Ndo:"
+      },
+      "area": 216.0,
+      "bbox": [
+        336.0,
+        330.0,
+        35.0,
+        25.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

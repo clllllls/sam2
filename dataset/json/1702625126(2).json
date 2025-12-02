@@ -1,0 +1,47 @@
+{
+  "image": "1702625126(2).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hm=R3Q=4L4N30O00010O00010O001O01O01O010O000010O00010O01O01O01N1\\MTDl0m;oN`Dh0b;QOlDf0U;UOWEc0_=G9GfYX7"
+      },
+      "area": 3312.0,
+      "bbox": [
+        27.0,
+        193.0,
+        35.0,
+        129.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "iXZ78Q`0=B9G3M3N2oAUO_<n0iBFX=d12O0O1O101N3M2O1N3M2O1O2N;E0O10001O000O102N2N3M3C<\\O[P="
+      },
+      "area": 1824.0,
+      "bbox": [
+        461.0,
+        177.0,
+        33.0,
+        87.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

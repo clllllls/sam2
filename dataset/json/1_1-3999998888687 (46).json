@@ -1,0 +1,47 @@
+{
+  "image": "1_1-3999998888687 (46).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "lU:d0l;X1hNe0[O1O1O1ON2N2N2N2N2N2N2N2N2N2N2N2N2N2N2L4M3_Oa0O1O100O1O1O1O1N2O1N2N2M3N2M3N2N2N2NVeQ4"
+      },
+      "area": 1874.0,
+      "bbox": [
+        26.0,
+        28.0,
+        42.0,
+        84.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "]^X22^<1O1O2N0011M2O`e`2"
+      },
+      "area": 35.0,
+      "bbox": [
+        185.0,
+        189.0,
+        8.0,
+        7.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

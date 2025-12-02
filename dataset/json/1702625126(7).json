@@ -1,0 +1,87 @@
+{
+  "image": "1702625126(7).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "TZ=;_?d0\\Od0B>TClNY:X1_ElNa:U1ZEoNe:T1UEPOk:Q1PESOP;n0lDUOS;k0mDVOS;j0lDWOT;h0lDYOS;h0lDYOT;f0lD]OR;c0mDAP;>oDHn:7PEOl:0QE7l:IoD`0m:_OoDP1g:b2H2M3M3M3M3N1N1O1O1O10QMbFRO]97cG@]82ZHDg79eH^O[7?QIXOo6e0]IQOe6k0eInN[6o0mIlNS6Q1UJiNl5T1\\JgNd5V1dJeN]5W1l4M3M3M3N3L3M3M4L4L4L4L4L^in6"
+      },
+      "area": 5836.0,
+      "bbox": [
+        26.0,
+        80.0,
+        55.0,
+        239.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "VjS72T`01O2M3N2M3N2N2UKDgI?Z6H\\I:e6ITI:m6ImH9S7LfH4]7O\\H2g71SHOP85cG1`82PG8R9M]F=f9FjEd0Y:@VEj0m:YOcDQ1`;i12M4L4L4L4L3M4K6I7I7I8H7I7H8G;F<C=YO_b`0"
+      },
+      "area": 2707.0,
+      "bbox": [
+        448.0,
+        155.0,
+        39.0,
+        173.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "h\\S62U`05L4K4L3N2M4L3M3N2M2N3M2N2N3M2N2N3N1N2N2N2N2N2N2N1O2M3M3N2M3N2M3M2O2M3M2O2N2N1N3N2N1O200O010O10N101N101O0fMnB]1T=bNPCZ1P=fNSCT1Q=kNSCm0Q=SOQCg0S=YOoBa0V=_OkB;Y=EiB4]=LdBN`=3aB_Ol=a0m0010O10O0100O1O010O1O0010O01O01O01O010O001O010O0010O01O01O01O010O001O010OO1N4L6J5Eh[?"
+      },
+      "area": 5427.0,
+      "bbox": [
+        384.0,
+        361.0,
+        105.0,
+        108.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "md_19m?<D3M3M3M3M3M3N2N1O1O1O1O1O2O0O1O1O1O1O2N1O1N2N2M3M4M1N1012N2M3N2N2M2O2N2M3N2M2O2N1N2O2O001O0O2O00001O0O2O0002O6I6KN2O1O0O2O1O1N2M2O2N2M3N3M3L4M3M3LfZb5"
+      },
+      "area": 3232.0,
+      "bbox": [
+        93.0,
+        392.0,
+        75.0,
+        74.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

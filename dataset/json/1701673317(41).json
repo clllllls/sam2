@@ -1,0 +1,127 @@
+{
+  "image": "1701673317(41).bmp",
+  "width": 520,
+  "height": 513,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          513,
+          520
+        ],
+        "counts": "lcU53k?4O1O10O1O001N1OT\\j2"
+      },
+      "area": 58.0,
+      "bbox": [
+        330.0,
+        303.0,
+        9.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          513,
+          520
+        ],
+        "counts": "\\^_32m?300O1000NfQb4"
+      },
+      "area": 28.0,
+      "bbox": [
+        222.0,
+        236.0,
+        6.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          513,
+          520
+        ],
+        "counts": "^oW32o?2M2O1O01O2N10^`h4"
+      },
+      "area": 40.0,
+      "bbox": [
+        207.0,
+        286.0,
+        8.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          513,
+          520
+        ],
+        "counts": "nSk41n?201O10N1NW\\V3"
+      },
+      "area": 17.0,
+      "bbox": [
+        309.0,
+        327.0,
+        6.0,
+        5.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          513,
+          520
+        ],
+        "counts": "Wmi22m?1O1O101O000000000O101O0000000O1N2N3M2N2O1N2N2N2N3M2O1N2N2O1N2N3N1N2O1O1O1O1N3N1O1O1O1O1N2O2N1O1O0O10O0010O01O01O010O01O010O010O0010O01O01O01O001O001N2O2N1O2N2N1O2N3M3M3L4M3M3M3M3M3N1O3M3L4M3M3M`ei3"
+      },
+      "area": 3697.0,
+      "bbox": [
+        179.0,
+        64.0,
+        98.0,
+        182.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          513,
+          520
+        ],
+        "counts": "PX]43h?6L5M2N3M1O1O2ON3L3N2012M3M3N2M3M2O0O10\\OZAMf>2]AIf>6c0O100O10000O100O100O10000O10OOQXT3"
+      },
+      "area": 517.0,
+      "bbox": [
+        281.0,
+        458.0,
+        38.0,
+        34.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

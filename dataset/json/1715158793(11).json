@@ -1,0 +1,47 @@
+{
+  "image": "1715158793(11).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ckT62U`01O100O1O001O000N2_ONj@5V?>1N4K;C]ck1"
+      },
+      "area": 137.0,
+      "bbox": [
+        387.0,
+        318.0,
+        15.0,
+        31.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "miT23R`06L1O2O000001O1N2N3L]em5"
+      },
+      "area": 100.0,
+      "bbox": [
+        135.0,
+        256.0,
+        11.0,
+        12.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

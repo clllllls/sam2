@@ -1,0 +1,107 @@
+{
+  "image": "1_1-128.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "adb14T`02N2N223LN000O001O2O1O1Oc@6Z>NbA5[>1^A2_>6ZAMb>P1L3I8M2N0O11O2N101O10O100O1O1OO1O1O00100O101N2O0O100O10O0100000000000O2O1O001O1N2O2M4MO00001O001O1O2N1O1O1O001O001O001O00001O001O000000001O1O001O1O001O1O001O00001O001O00010O0000000000000000001O0000001O0000001O0000001O000000001O0000001O00000000000000000001OO100000000000000000000000001O0000001O00000000000000000000000000000000000000000000000000000000O1000000O1000000O100000000O1000000O101O000O1000000O1000000O100000001N1000000O1000000O100O1O100O1O100O1O100O1O100O10000O10000O10000O10000O1O1O1O1O1O10000O10000O001O001O1O00101N2N001O1O1O2N2N100O1O10O00010O00O1O1O2O00[Oe0O2N100000O1N20010O1O00100O1NmNYBHe=9_BD`==cB@]=`0fB]OZ=b0V1O1M3M2N2N2N20002N100O2N1O2O0O1O2O0O00001M2N200010O0001O2M3M2ObWT1"
+      },
+      "area": 17420.0,
+      "bbox": [
+        99.0,
+        336.0,
+        349.0,
+        159.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "eUl2142k?0T@3e?;K32N3NlNAaA0<0D0O`0^>Z1C:nAPNOL`07@23GU<b2lCdMM?O]OW<b2jCeMNb0X<S3O3M3N2M11OFjKbDV4];mK`DV4Z;=bD\\KU;i4kDWKT;j4lDVKS;P500000000O11O000000O1O11O0001N101O3MMTEjJl:V520O2O2N010000001O004K02N1000O2N20N1N2O11N2O1O1OO2M2O1O2O0000001O00000000000000000000O11O1O10QEhJl:\\5ON2M200002N000000000000010ON2N2000000000000O1O100O101O0000000000O11O0000000GlD^KU;`4nD^KZ;Z4fDfK\\;W4>I50M4M7KJ5gKTDR4T<H705J2N101H:ATC[MP=a2TC\\Ml<d2TC\\Ml<m1nBeN5^OR=6kBIN7060I851CP=3ZCMG0O0:5_?LVVP3"
+      },
+      "area": 22138.0,
+      "bbox": [
+        181.0,
+        181.0,
+        149.0,
+        178.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ikb65S`03M2O000O3M4L2M3M3N1N2O[Oj@8V?En@:b?O02N5KO01000O1O1108IO0000O0O1O6f@XOi>X1M000O4LO0O2_NcAS1k>L4L4N2Ok@ZOi>:o@M11o>M[A9g>B^A=Y?6Y@@2Ni>V11O3jNPAk0Y?N6F:F6Kjej0"
+      },
+      "area": 1358.0,
+      "bbox": [
+        415.0,
+        128.0,
+        52.0,
+        129.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Q_k52V`0002O1N2N1O1O0O101O00100O020O0000O2N1000O01000O101O2N1N2OO10O01O0000000EX@7h?G[@7m?N03N00O10003Kefe1"
+      },
+      "area": 453.0,
+      "bbox": [
+        369.0,
+        89.0,
+        45.0,
+        39.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "fQV14R`03M2K500001O1O1O001O1O1O0000001O3Ljkh6"
+      },
+      "area": 170.0,
+      "bbox": [
+        74.0,
+        477.0,
+        18.0,
+        14.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

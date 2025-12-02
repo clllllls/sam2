@@ -1,0 +1,27 @@
+{
+  "image": "1_1-3999998888687 (54).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "fTn32\\<2N2N2N2O1O1N2O1O1O1O1O1O1O1O1O1O100TO\\OkEe0Q:@mEa0Q:BmE?Q:DmE=Q:FmE;S:FkE;U:FhE<X:EeE=[:DbE>^:C_E?a:h000O100000000000000O1O1O100O1O1O1N2N2N2O19Ha0\\Oc0]Od0\\OhP9"
+      },
+      "area": 2296.0,
+      "bbox": [
+        322.0,
+        300.0,
+        54.0,
+        77.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "image": "144630201-109.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "e_T45S`01O1O1F1Z@Oe?=b@Am>m0001O1O3M4I^_m3"
+      },
+      "area": 260.0,
+      "bbox": [
+        260.0,
+        460.0,
+        12.0,
+        35.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "T^\\74R`06J3M3c@Cl>>RAHi>9UAJj>k0N2N2N1O2O1O001O0O110O010O0016H4K4L7G8HV]>"
+      },
+      "area": 952.0,
+      "bbox": [
+        465.0,
+        303.0,
+        26.0,
+        52.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "goP77R`01N2NO100O100O1O002N1O1NR_P1"
+      },
+      "area": 86.0,
+      "bbox": [
+        443.0,
+        31.0,
+        13.0,
+        11.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "UeU65S`0001O00O10[[o1"
+      },
+      "area": 32.0,
+      "bbox": [
+        389.0,
+        125.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "TSP44R`04L3O0O001O01N101O101NTlQ4"
+      },
+      "area": 114.0,
+      "bbox": [
+        252.0,
+        124.0,
+        12.0,
+        15.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "bUl1d0o>e0000000000000000000000000000000000000000000000000000000000000000000000000000000000001N[ObRe5"
+      },
+      "area": 1805.0,
+      "bbox": [
+        118.0,
+        236.0,
+        45.0,
+        43.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "S]f31W`01O2N1O1O000O11O1M2NVR\\4"
+      },
+      "area": 47.0,
+      "bbox": [
+        233.0,
+        90.0,
+        11.0,
+        7.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

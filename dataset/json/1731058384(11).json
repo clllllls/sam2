@@ -1,0 +1,107 @@
+{
+  "image": "1731058384(11).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`oZ28P`0000000000000OaPi5"
+      },
+      "area": 63.0,
+      "bbox": [
+        147.0,
+        344.0,
+        8.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "TcR37Q`0000000001O00O1O1O1OUlo4"
+      },
+      "area": 73.0,
+      "bbox": [
+        194.0,
+        84.0,
+        11.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "YWc71V`01O1O2M2O1O2N1O1O2N1O1O2M2O1O1O2N10001OC_V:"
+      },
+      "area": 298.0,
+      "bbox": [
+        478.0,
+        486.0,
+        21.0,
+        26.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "kTQ75S`06J00000O2O0000000O100000000O11O0000000000000O100000000O1000000O01000000O1000000O100O100O100O13N5Gg`="
+      },
+      "area": 649.0,
+      "bbox": [
+        443.0,
+        187.0,
+        50.0,
+        20.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "k\\=3Q`04M31O0010O0010O0010O0010O001O00001O0001O0000000000001O000000000000000000000000O1000O02O1O1N2MTYR7"
+      },
+      "area": 391.0,
+      "bbox": [
+        26.0,
+        196.0,
+        48.0,
+        16.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

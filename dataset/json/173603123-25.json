@@ -1,0 +1,87 @@
+{
+  "image": "173603123-25.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "jP?i1X;W3@`0@`0O1N01O1O4N2M2N2O1N2N2N1O2O0O2N1000000O1001O000O1000000000PMQFGo9ObFJ^9BaG3_8EoG6o7AbH8^7^OPI?o6\\OZI`0e6]OaIb0]6\\OiIa0V6^OoI`0P6^OUJ?l5[O\\Jb0k:K3L5KSTQ7"
+      },
+      "area": 6383.0,
+      "bbox": [
+        29.0,
+        166.0,
+        47.0,
+        197.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "flk02T`02N3M2N3O00000000000O11O000000001O000000001O000000001O0000001O000000001O1O001O1O001O1O2OmYe6"
+      },
+      "area": 398.0,
+      "bbox": [
+        54.0,
+        477.0,
+        45.0,
+        14.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`V`22S`03M4M30O0000001N1000001O000000001O0000000000000000000000001O0000000000001O00001O00002N_`Q5"
+      },
+      "area": 310.0,
+      "bbox": [
+        157.0,
+        480.0,
+        44.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "VVX21W`00O00100O1O100O1O100O1O100O010O00010O0010O00010O010O01O01O01O010O0010O01O10O010O10O010O01000O0100O01000O0100O01000O0100O01000O0100O01000O01000O010O10000O10O10O10000O10O010000O1000O10000000O10O100000000000O1000O10000000O1000000000000O10000000000000000000000001O0000001O000001O01O0000001O0000010O0000010O000000010O0000010O000010O0001O01O01O010O000010O00010O0001O01O01O01O01O00010O0001O01O01O010O000100O00100O1O010O10O01O2O1N2N2OdVc2"
+      },
+      "area": 2300.0,
+      "bbox": [
+        142.0,
+        39.0,
+        214.0,
+        48.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "image": "1701673317(12).bmp",
+  "width": 520,
+  "height": 517,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "]fj51R`0201O0O02O2NhYX2"
+      },
+      "area": 20.0,
+      "bbox": [
+        369.0,
+        405.0,
+        7.0,
+        5.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "hb<9Z?b0F:2N2N2N3M4L4L2N2N2M7H`\\c7"
+      },
+      "area": 296.0,
+      "bbox": [
+        24.0,
+        452.0,
+        13.0,
+        37.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "QUm4:j?1O2O1O000001O00000O1000O20O000O2O001O000000001O000O2O001O0O2O1Olfh2"
+      },
+      "area": 347.0,
+      "bbox": [
+        311.0,
+        140.0,
+        33.0,
+        14.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "^iX59k?2O1N2O1N2N1O2M2O1000000001O001N2O2N1N2M2O2N3M2KnSa2"
+      },
+      "area": 407.0,
+      "bbox": [
+        334.0,
+        160.0,
+        25.0,
+        23.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "ZTe49_?>N2O01O001O0O10001O0O101N101O001O1O001O0O2N1O2O0N5JkhS3"
+      },
+      "area": 461.0,
+      "bbox": [
+        295.0,
+        185.0,
+        27.0,
+        25.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

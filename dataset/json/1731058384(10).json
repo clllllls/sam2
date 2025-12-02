@@ -1,0 +1,67 @@
+{
+  "image": "1731058384(10).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "PV_37n?4K4C>K5K2002N2M3L4L4L4L4L4K4MSi`4"
+      },
+      "area": 337.0,
+      "bbox": [
+        218.0,
+        465.0,
+        16.0,
+        41.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "aeR71U`03M3M3M300O00010O01O00010O0010O0001O010O00010O01O01O010O01O01O010O01O01O010O010O0010O010OO2O1O1O001O3Mon:"
+      },
+      "area": 556.0,
+      "bbox": [
+        446.0,
+        185.0,
+        52.0,
+        28.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_]j46l?8N2N2N2N2f@^Oj>d0PADl>n0N001O1NgNYAS1Q?N1I7J5M3M4L3L4JY_S3"
+      },
+      "area": 498.0,
+      "bbox": [
+        304.0,
+        40.0,
+        20.0,
+        46.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

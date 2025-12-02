@@ -1,0 +1,47 @@
+{
+  "image": "1_1-282.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oba0f0]??B8G8E<\\Oc0B=K5K5K5K5K5K5K5K5K5K4K5L4L4M25L7I7I6J3M3M4L3M3M3M4K5L3M4L3M2N2N2N1O2N2N2M2O1O1O1O1O1O1N101O0O101N100O2O000O2O0O101N10001N100O2O000O100O100O10000O100O10000O100O101N10000O100O100O10000O100O1O1O1O1O1O001O1O10O01O1O001O1O1O00100O1O001O1O1O001O1O010O1O1O001O1O001O010O001O001O1O0010O01O001O001O010O001O001O1O0010O01O001O001O01O0001O00001O0001O01O00001O0000010O00001O00000010O0001O0000001O01O01O0000002N2N2OPW]4"
+      },
+      "area": 10587.0,
+      "bbox": [
+        34.0,
+        244.0,
+        207.0,
+        229.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "k]j5f0c>o001O00001N12O9Fe0\\OcaX2"
+      },
+      "area": 473.0,
+      "bbox": [
+        367.0,
+        35.0,
+        10.0,
+        58.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

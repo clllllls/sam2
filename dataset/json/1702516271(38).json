@@ -1,0 +1,27 @@
+{
+  "image": "1702516271(38).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "xian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mo]34R`03N2O2M1O1O1O1000O0O10O01O2O1N1000000001N1000O1O1000000000000O10O10000O1O011OO1O100O1000000000O100O1000O2O0000O100000000O10O11OO10000O1000000000O10000000O100000O10000000O100001O00O01O100000O10O010O10000000O100000O100L3O111O01O1N3N2N1O1O2NRXm2"
+      },
+      "area": 1139.0,
+      "bbox": [
+        216.0,
+        188.0,
+        120.0,
+        137.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "image": "173506989-24.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "X]d22U`04L1O11O002LRS`5"
+      },
+      "area": 40.0,
+      "bbox": [
+        166.0,
+        117.0,
+        7.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ddU42V`02M11O10ONm[o3"
+      },
+      "area": 21.0,
+      "bbox": [
+        263.0,
+        91.0,
+        6.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Tfe44T`00O2N01O100O0100000O3NmX\\3"
+      },
+      "area": 55.0,
+      "bbox": [
+        294.0,
+        401.0,
+        12.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Vbg63U`00O1101Man]1"
+      },
+      "area": 15.0,
+      "bbox": [
+        424.0,
+        261.0,
+        5.0,
+        5.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dUQ72T`0201N11OV[T1"
+      },
+      "area": 22.0,
+      "bbox": [
+        443.0,
+        217.0,
+        5.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "nUQ65S`0000100MjZT2"
+      },
+      "area": 22.0,
+      "bbox": [
+        380.0,
+        222.0,
+        5.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

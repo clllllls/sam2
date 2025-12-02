@@ -1,0 +1,107 @@
+{
+  "image": "1_1-870.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_c\\42V`03M001N101O001N101O001N101O001N101O001N101O000O1000000O101O000O100O10001N100O10000O100O2OO10O100O10000O010O100O10000O010O10000O100O01000O100O1O100O00100O1O100O1O00100O1O100O1O00100O00100O00100O001O10O01O10O01O1O001O100O001O1O001O1O00100O001O1O001O1O00100O00001O0000001O01O0001O000O10O0100O01000O10O0100O010O10O01000O001O001O000000O10O010O010O100O1O10000000001O001O0O2K4M4K4H9XOSek0"
+      },
+      "area": 8680.0,
+      "bbox": [
+        276.0,
+        302.0,
+        189.0,
+        179.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[m>1V`01N3N1O101O001O000000000000000000O1000000000000O10000000000O01000000N2L4M2N3L3O2N01O000O2N1O2N2O0O2N2N5L4L[hm6"
+      },
+      "area": 558.0,
+      "bbox": [
+        29.0,
+        155.0,
+        54.0,
+        44.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "R^]72e?a0E;E;I7N3N1N2O100O2O000O100O20N1N2N2O1N2L4I;YOS`>"
+      },
+      "area": 1130.0,
+      "bbox": [
+        467.0,
+        243.0,
+        24.0,
+        60.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "^oi62V`03M4L2N2N1N3O1N1O010O00010O0010N3M3N1N3IU]S1"
+      },
+      "area": 303.0,
+      "bbox": [
+        429.0,
+        133.0,
+        21.0,
+        23.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ci\\21V`02M3N200O1O1O001O001O1O001O1O001O1O100O001O1O1O1O1O2N1O1O1O1O2N100O0000001O00001OO1O1O1O1O100O3M4L3Eh[Q5"
+      },
+      "area": 1078.0,
+      "bbox": [
+        151.0,
+        119.0,
+        51.0,
+        37.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "image": "1701673317(21).bmp",
+  "width": 520,
+  "height": 517,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "UVo44o?4L4L4L9G4M4L2M2O2N1O1O2N2N1O2N2O1N2O1OO1M3D<N3L3M3[Oi@8[?Fj@6W?IQAOP?OgWh2"
+      },
+      "area": 1001.0,
+      "bbox": [
+        315.0,
+        135.0,
+        30.0,
+        54.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          517,
+          520
+        ],
+        "counts": "mok52o?8K4M2N1001O000O3M2M4KY_T2"
+      },
+      "area": 148.0,
+      "bbox": [
+        372.0,
+        180.0,
+        12.0,
+        20.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

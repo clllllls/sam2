@@ -1,0 +1,27 @@
+{
+  "image": "1713518032(4).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ZVo62T`04K5K4M2N2N2N2N21O001N101O1O0O2O001O00001O000010O0001O1O2O0NTTi0"
+      },
+      "area": 527.0,
+      "bbox": [
+        439.0,
+        256.0,
+        31.0,
+        25.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

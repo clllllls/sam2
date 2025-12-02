@@ -1,0 +1,87 @@
+{
+  "image": "1702625126(18).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "lQl07o?1N2N3N1O1010O0001O00010O00001O01O01O1O100O1O100O100O0001N101O001N10001N101O000O2O0O2N1N2O2M2O^ec6"
+      },
+      "area": 732.0,
+      "bbox": [
+        55.0,
+        92.0,
+        48.0,
+        47.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ih_21U`0101N2N2O1N2O0O2O1N2O1N1O2O1N2O1N2O0O2N2O0O2O10O0100O00100O010O10O01O10O0100O010O1O010O10O10000O100000000O1000000O100000000O100000000O100000000O1000000O1000O11O0O101O00001N101O00001O00002N3M2N2N000000001O000000001O000000001O000000001O00000000001O00000001O01O00000000001O01O0000000000000010O00000000000000010O0001O001O00001O00010O001O00001O001O00010O00010O010O00010O00010O0010O0010O0010O00010O10O0100O01000O10O0100O10O0100O01000O10O0100O10O0100O01001N3N2M3N_oS2"
+      },
+      "area": 4227.0,
+      "bbox": [
+        157.0,
+        0.0,
+        229.0,
+        66.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Tfc22W`01N3M3M2O2M2N3M3M2O1N1O1O100O1O00100O1O1O100O1OO1N2N3N1N2N2O2M4L4HVSS5"
+      },
+      "area": 743.0,
+      "bbox": [
+        164.0,
+        420.0,
+        34.0,
+        39.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dd_52S`03L4M3M3YOC`A`0_>EYA?f>FSA=m>?O1O1O2N100O1O1O100O1O100O101N00100O100O1O100O100O1O10O0100O1O100O100O1O100O11O1O1O1O2N1O1O1O1O1O1O2N1O1O1O1O1O1O2N1O1O1O1O1O1O1O1O1O1O1O1O2N1O1O1O1O1O1O1O1O1O1O1O1O1O1O1O2M2N2O1N2N2O1NYTU1"
+      },
+      "area": 4074.0,
+      "bbox": [
+        345.0,
+        397.0,
+        101.0,
+        67.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

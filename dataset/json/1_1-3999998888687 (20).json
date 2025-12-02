@@ -1,0 +1,87 @@
+{
+  "image": "1_1-3999998888687 (20).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "le>4]<3L2O1N1O2O10O0010O01O001O01O01O0001O0001O0O1000000O2O00000O1000O0100000O01000O10O01000N1N4MWUk3"
+      },
+      "area": 433.0,
+      "bbox": [
+        37.0,
+        236.0,
+        47.0,
+        51.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "T^S32[<5OO00013Kk^f1"
+      },
+      "area": 30.0,
+      "bbox": [
+        254.0,
+        225.0,
+        6.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "goP16X<1O1lFJn57SJKi55XJLf55\\JJb57_JI_58bJH]58dJHZ58hJHW58jJHT59mJHQ58PKHn48TKHk48VKHh48ZKHe48\\KHb49`KF_49cKG\\49eKHY47iKIU48lKHS47oKIP47QLIo36RLJn34TLLk34VLLj33WLMi33WLMh33YLMg32ZLNe33[LMe32\\LNd31]LOb32^LNb31_LOa30_L1`30`L0`30`L0`30`L0`30`L0`30`LOa31_LOa31_LOa31^L0b30^L0b30^L0c3O\\L1e30ZL0f30ZL0g3OXL2h3OWL1i3OVL1l3OSL1m3OSL1m3ORL2o3NPL2P4NoK3Q4NmK2U4MkK2V4NiK3W4NhK1Z4NeK2\\4ObK2^4NbK1`4N_K2b4O\\K1f4OXK2h4OWK0j40UK0m40QK1o40oJ0R51lJOV51hJOY51gJN[52cJN^53`JMa54]JLe54YJLi54UJLm53RJLQ64mILV63hIMZ63dIM^63`IMb63\\IMf63XIMj62UINm62QINP73hH2[7OaH2a7O[H2f70VH0m73nGMT87eGJ\\88`GHd88XGIl8:jFIZ9<TFLQ:V15K5J6K5J:G=B>Ce]a2"
+      },
+      "area": 1999.0,
+      "bbox": [
+        84.0,
+        142.0,
+        107.0,
+        150.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "\\e`02\\<4M4K4L5L3O2O0O2N101N1O100O001O00010O001O000000O2O000000000O101O0000000O100000001O0O100000000O10000O101O0O1000000O10O10O10O1000O01000O01000O01000O01000O01000O01000O001O1O001O01O01O001O000010O01O00001O0010O0001O001O00010N1O2N100O2N1O2N100OQdl2"
+      },
+      "area": 2478.0,
+      "bbox": [
+        42.0,
+        260.0,
+        120.0,
+        101.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

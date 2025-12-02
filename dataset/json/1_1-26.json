@@ -1,0 +1,67 @@
+{
+  "image": "1_1-26.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "dSk16P`0<D8G5L5K4L4K6K4L5J5L5K4K5L5J5L6I8I7H8H8I7H8I6J4M4M2M3M2O1N2N2O1N2N2O1N2N2O1N3M2O1N2N2N2O1N2N2O1N2N2O1N2N101N2N2O1N1O2O1O1O1N101O1O1N2O001O1N2O1O1O0O2O1O1N2O001O1N2O1O001N2O1O1O0O2O1O2N3M3M2N3M3M2N2N2N2N2N2N2N2N2N2N1O1O1O1O1O1O1O1N110O1O100O100O1O100O0010O0100O0010O01O010O00100O010O00101N100O2O0O101N100O100O100O10O0100O100O100O100O010O10O010O0100O010O01O001O010O001O010O001O0010OO2O001O001O001O001O001O001O001O001O001O001O0015J7J0O010O10O0010O01O010O00100N101O001O001O001O001O1N101N1O2O0O2O0N3N13N1OO001O001O001O1O1O1O1N2O1O1O1N3N1O1O1O1N2N2N2N2N2N2N2N2M3N2N2M3N2N2N2O1N2N2N2O1N2N2N2O1N1O2jNjFWKW9f4mFWKU9f4oFXKS9d4QGZKP9d4SGYKP9f4PGYKQ9f4QGXKP9h4QGUKR9i4oFVKR9j4nFUKT9i4mFVKT9j4lFTKV9k4lFSKV9k4mFRKT9h4TGTKn8m4SGPKn8Q5T1001O100O1O1O1O1O0000010O0000JTEQKk:m49O101O0000000000001FkD_KU;_4;0000000000O2O000000000M3L5L3O2N1O2M2O2N1O2N1O101N101N101N100O100O1O1O008H>[NUCRO\\=8j^<"
+      },
+      "area": 87624.0,
+      "bbox": [
+        116.0,
+        122.0,
+        379.0,
+        362.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[XW75R`02O3M1O1O01N3Mdgl0"
+      },
+      "area": 74.0,
+      "bbox": [
+        455.0,
+        210.0,
+        8.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ejb64U`03L000000001OO4LPe`1"
+      },
+      "area": 57.0,
+      "bbox": [
+        415.0,
+        93.0,
+        9.0,
+        9.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

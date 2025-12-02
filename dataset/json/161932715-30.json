@@ -1,0 +1,87 @@
+{
+  "image": "161932715-30.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[g]46o?7J4L2N3L3H9LDo@FR?9RABP?=>N1N4L3KQXc3"
+      },
+      "area": 271.0,
+      "bbox": [
+        279.0,
+        27.0,
+        14.0,
+        38.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "Yjj4<j?7J7J?AO109G4L9G5IaTX3"
+      },
+      "area": 265.0,
+      "bbox": [
+        304.0,
+        454.0,
+        10.0,
+        41.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "PTl5b0f?c0]O000000000000000000000000000000000000000000000000000000000000000O1:Fb0^OmSi1"
+      },
+      "area": 1315.0,
+      "bbox": [
+        370.0,
+        239.0,
+        37.0,
+        38.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "V[n11W`02M3N000012KRUV6"
+      },
+      "area": 31.0,
+      "bbox": [
+        122.0,
+        405.0,
+        7.0,
+        7.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

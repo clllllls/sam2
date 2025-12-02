@@ -1,0 +1,27 @@
+{
+  "image": "1702625126(11).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "toumingjiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "c\\b05P`09F;F9G8G6L5K5K4L5K5K4M3L4L4L4L4L4L4M3L4M3L3N0O010O01N1N3M2O2O010O010O2O1N2O0O2O1N101N2N2N102M2N3M2O1N3M2O2M2O2M2N2O2M2N3M4L4L4L3M4L4L4L4L5K4L5I6HYT`6"
+      },
+      "area": 5708.0,
+      "bbox": [
+        36.0,
+        45.0,
+        74.0,
+        138.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "image": "171123_775.bmp",
+  "width": 440,
+  "height": 440,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "jkk3?W=8H5J\\OeC3U<0RDLk;3ZDKb;5cDKYOMg;8RELSOOh;6XEKmN0j;2]E5c:IaE4^:MdE2\\:LhE2W:MmE1R:0nE0Q:0QF0m9OVF1h90YFOg90[FNe93o101O01OO110O001O10^hd1"
+      },
+      "area": 339.0,
+      "bbox": [
+        288.0,
+        90.0,
+        29.0,
+        75.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "Yhc32f=000O10000O10000000000000000000000000000001O000001O000001O0001O010O00010O001O010O01O010O0010O10O010O0010O10O0010O010O010O10O2OVi]1"
+      },
+      "area": 250.0,
+      "bbox": [
+        269.0,
+        175.0,
+        64.0,
+        21.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "XUh12f=2N2N00001O000O20O001O010O00010O0010O010O01O010O01O010O01O010O010O01O01O010O010O010O00010O0100O01000O010O1000O010000O010000O0100000O01000O00100O010O1O01O010O00010O00010O0010O00010O01O01O01OO100000000000O1000000000000O001O001O00001O001O000001O1O001O10O010O10O010O0100O000001O000000003M3MTPW2"
+      },
+      "area": 1035.0,
+      "bbox": [
+        130.0,
+        311.0,
+        144.0,
+        50.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "mao",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "Xac32e=3M0O2O001N2N1O2N1O1000O10000000001N100000000001O00000000O0100000000I7G8N3L4M3N12N1O2N1O2H7@^]e1"
+      },
+      "area": 775.0,
+      "bbox": [
+        268.0,
+        315.0,
+        47.0,
+        81.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          440,
+          440
+        ],
+        "counts": "\\\\m31g=1N3N1N2N2O2M2O1N101N1O2O0O101N101N1O2OO0100O010O10O0100OO2N1O7I;EYRa1"
+      },
+      "area": 650.0,
+      "bbox": [
+        291.0,
+        339.0,
+        34.0,
+        33.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

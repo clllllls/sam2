@@ -1,0 +1,47 @@
+{
+  "image": "173520865-47.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "f^W58P`01O0001N3Mham2"
+      },
+      "area": 46.0,
+      "bbox": [
+        329.0,
+        398.0,
+        6.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "ogi58o?3N001O00O2O0N4NggY2"
+      },
+      "area": 89.0,
+      "bbox": [
+        365.0,
+        406.0,
+        9.0,
+        12.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

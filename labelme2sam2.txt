@@ -1,0 +1,267 @@
+import json
+import os
+import cv2
+import numpy as np
+from PIL import Image, ImageDraw
+import shutil
+import pickle  # 添加pickle用于序列化数据
+
+
+def json_to_sam_masks(json_path, image_shape):
+    """
+    将JSON标注转换为SAM所需的掩码格式
+    针对你的JSON结构进行了优化
+    """
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    masks = []
+    points = []
+    labels = []  # 保存缺陷类型
+    defect_types = []  # 保存缺陷类型名称
+    for shape in data.get('shapes', []):
+        # 获取缺陷类型和坐标点
+        defect_type = shape['label']
+        polygon_points = shape['points']
+        # 创建掩码
+        mask = np.zeros(image_shape[:2], dtype=np.uint8)
+        # 将浮点坐标转换为整数
+        int_points = np.array(polygon_points, dtype=np.int32)
+        # 填充多边形创建掩码
+        cv2.fillPoly(mask, [int_points], 1)
+        masks.append(mask)
+        # 在缺陷区域内随机选择一个点
+        y_coords, x_coords = np.where(mask > 0)
+        if len(y_coords) > 0:
+            random_idx = np.random.randint(len(y_coords))
+            # 注意这里点的格式：每个点是一个包含[x, y]的列表
+            points.append([[x_coords[random_idx], y_coords[random_idx]]])
+            labels.append(1)  # 1表示正样本点
+            defect_types.append(defect_type)  # 保存缺陷类型
+    return np.array(masks), np.array(points), np.array(labels), defect_types
+
+
+def prepare_led_dataset(image_dir, json_dir, output_dir=None):
+    """
+    准备LED数据集用于SAM 2训练
+    将一张图像中的多个缺陷转换为多个单缺陷样本
+    """
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+        # 创建子目录用于存储可视化结果
+        vis_dir = os.path.join(output_dir, "visualizations")
+        os.makedirs(vis_dir, exist_ok=True)
+        # 创建子目录用于存储预处理数据
+        data_dir = os.path.join(output_dir, "visualizations_data")
+        os.makedirs(data_dir, exist_ok=True)
+        # 创建子目录用于存储单缺陷图像
+        single_defect_image_dir = os.path.join(output_dir, "single_defect_images")
+        os.makedirs(single_defect_image_dir, exist_ok=True)
+        # 创建子目录用于存储单缺陷JSON标注
+        single_defect_json_dir = os.path.join(output_dir, "single_defect_json")
+        os.makedirs(single_defect_json_dir, exist_ok=True)
+
+    dataset_records = []
+    # 获取所有JSON文件
+    json_files = [f for f in os.listdir(json_dir) if f.endswith('.json')]
+
+    for json_file in json_files:
+        # 获取对应的图像文件
+        base_name = os.path.splitext(json_file)[0]
+        image_extensions = ['.png', '.jpg', '.jpeg', '.bmp']
+        img_path = None
+        for ext in image_extensions:
+            potential_path = os.path.join(image_dir, base_name + ext)
+            if os.path.exists(potential_path):
+                img_path = potential_path
+                break
+
+        if not img_path:
+            print(f"Warning: No image found for {json_file}")
+            continue
+
+        # 读取图像
+        image = cv2.imread(img_path)
+        if image is None:
+            print(f"Warning: Failed to read image {img_path}")
+            continue
+
+        # 转换标注
+        json_path = os.path.join(json_dir, json_file)
+        masks, points, labels, defect_types = json_to_sam_masks(json_path, image.shape)
+        # 尺寸验证
+        assert masks.shape[1:] == image.shape[:2], \
+            f"Mask shape {masks.shape[1:]} does not match image shape {image.shape[:2]}"
+
+        if len(masks) == 0:
+            print(f"No masks found in {json_file}")
+            continue
+
+        # 为每个缺陷创建一个单独的记录
+        for i, (mask, point, label, defect_type) in enumerate(zip(masks, points, labels, defect_types)):
+            # 保存预处理后的数据
+            record = {
+                'image_path': img_path,  # 使用原始图像
+                'json_path': json_path,
+                'masks': np.array([mask]),  # 只包含当前缺陷的掩码
+                'points': np.array([point]),  # 只包含当前缺陷的点
+                'labels': np.array([label]),  # 只包含当前缺陷的标签
+                'defect_type': defect_type  # 保存缺陷类型
+            }
+            # 生成单缺陷图像和JSON标注
+            if output_dir:
+                # 创建单缺陷图像（复制原始图像）
+                img_ext = os.path.splitext(img_path)[1]
+                single_defect_image_name = f"{base_name}_defect_{i}_{defect_type}{img_ext}"
+                single_defect_image_path = os.path.join(single_defect_image_dir, single_defect_image_name)
+                shutil.copy(img_path, single_defect_image_path)
+
+                # 创建单缺陷JSON标注
+                single_defect_json_name = f"{base_name}_defect_{i}_{defect_type}.json"
+                single_defect_json_path = os.path.join(single_defect_json_dir, single_defect_json_name)
+
+                # 读取原始JSON
+                with open(json_path, 'r', encoding='utf-8') as f:
+                    original_json = json.load(f)
+
+                # 创建新的单缺陷JSON
+                single_defect_json = {
+                    "version": original_json.get("version", "0.3.3"),
+                    "flags": original_json.get("flags", {}),
+                    "shapes": [{
+                        "label": defect_type,
+                        "text": "",
+                        "points": original_json['shapes'][i]['points'],
+                        "group_id": None,
+                        "shape_type": original_json['shapes'][i]['shape_type'],
+                        "flags": {}
+                    }],
+                    "imagePath": single_defect_image_name,
+                    "imageData": None,
+                    "imageHeight": original_json.get("imageHeight", image.shape[0]),
+                    "imageWidth": original_json.get("imageWidth", image.shape[1]),
+                    "text": ""
+                }
+
+                # 保存单缺陷JSON
+                with open(single_defect_json_path, 'w', encoding='utf-8') as f:
+                    json.dump(single_defect_json, f, ensure_ascii=False, indent=2)
+
+                # 更新记录中的图像和JSON路径
+                record['image_path'] = single_defect_image_path
+                record['json_path'] = single_defect_json_path
+
+            dataset_records.append(record)
+
+            # 保存每个缺陷的预处理数据到单独的文件
+            if output_dir:
+                defect_data_path = os.path.join(data_dir, f"{base_name}_defect_{i}_{defect_type}.pkl")
+                with open(defect_data_path, 'wb') as f:
+                    pickle.dump(record, f)
+
+        # 保存可视化结果
+        if output_dir:
+            # 创建每个缺陷单独的可视化结果
+            for i, (mask, point, defect_type) in enumerate(zip(masks, points, defect_types)):
+                # 创建可视化图像 - 在原图上绘制当前缺陷
+                vis_image = image.copy()
+
+                # 为当前缺陷生成随机颜色
+                color = (np.random.randint(0, 255),
+                         np.random.randint(0, 255),
+                         np.random.randint(0, 255))
+
+                # 绘制掩码轮廓
+                contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                cv2.drawContours(vis_image, contours, -1, color, 2)
+
+                # 绘制点
+                point_coords = point[0]  # 获取点的坐标
+                x, y = int(point_coords[0]), int(point_coords[1])
+                cv2.circle(vis_image, (x, y), 5, color, -1)
+                cv2.putText(vis_image, defect_type, (x + 5, y),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1)
+
+                # 保存可视化结果
+                vis_path = os.path.join(vis_dir, f"{base_name}_defect_{i}_{defect_type}.png")
+                cv2.imwrite(vis_path, vis_image)
+
+            # 保存包含所有缺陷的可视化结果
+            # all_vis_path = os.path.join(vis_dir, f"{base_name}_all_defects.png")
+            # visualize_annotations(image, masks, points, defect_types, all_vis_path)
+
+        print(f"Prepared {len(masks)} defects from {json_file}")
+
+    # 保存完整的预处理数据集
+    if output_dir:
+        dataset_path = os.path.join(output_dir, "complete_dataset.pkl")
+        with open(dataset_path, 'wb') as f:
+            pickle.dump(dataset_records, f)
+        print(f"Saved complete dataset to {dataset_path}")
+
+    print(f"Total prepared {len(dataset_records)} single-defect samples for training")
+    return dataset_records
+
+
+def visualize_annotations(image, masks, points, defect_types, output_path):
+    """
+    可视化标注结果，用于检查数据预处理是否正确
+    在原图上绘制所有缺陷
+    """
+
+    # 创建可视化图像
+    vis_image = image.copy()
+    # 绘制所有掩码
+    for i, (mask, defect_type) in enumerate(zip(masks, defect_types)):
+        # 为每个掩码生成随机颜色
+        color = (np.random.randint(0, 255),
+                 np.random.randint(0, 255),
+                 np.random.randint(0, 255))
+        # 绘制掩码轮廓
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        cv2.drawContours(vis_image, contours, -1, color, 2)
+        # 绘制点
+        if i < len(points):
+            # 每个点是一个包含[x, y]的列表
+            point_coords = points[i][0]  # 获取点的坐标
+            x, y = int(point_coords[0]), int(point_coords[1])
+            cv2.circle(vis_image, (x, y), 5, color, -1)
+            cv2.putText(vis_image, f"{defect_type}_{i}", (x + 5, y),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1)
+
+    # 保存可视化结果
+    cv2.imwrite(output_path, vis_image)
+
+
+def load_preprocessed_data(preprocessed_dir):
+    """
+    从预处理目录加载已经生成的数据集记录
+    """
+    dataset_path = os.path.join(preprocessed_dir, "complete_dataset.pkl")
+
+    if os.path.exists(dataset_path):
+        with open(dataset_path, 'rb') as f:
+            dataset = pickle.load(f)
+        print(f"Loaded preprocessed data from {dataset_path}")
+        return dataset
+    else:
+        print(f"Warning: Preprocessed data not found at {dataset_path}")
+        return []
+
+
+# 使用示例
+if __name__ == "__main__":
+    # 预处理数据
+    dataset = prepare_led_dataset(
+        image_dir='dataset/images',
+        json_dir='dataset/json',
+        output_dir='dataset/preprocessed_data'
+    )
+
+    # 打印一些统计信息
+    defect_counts = {}
+    for record in dataset:
+        defect_type = record['defect_type']
+        defect_counts[defect_type] = defect_counts.get(defect_type, 0) + 1
+    print("Defect type distribution:")
+    for defect_type, count in defect_counts.items():
+        print(f"  {defect_type}: {count}")

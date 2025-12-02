@@ -1,0 +1,27 @@
+{
+  "image": "1_0-40.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "tuhei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[iT3?g?4H9PAUOF4S>U1jAGc=d1L4E;M4BkLaCX3]<;O1N2N2M4N2M2O1N5L001OO1000O1N2N2L4N3N2O0O1O1O2O001N2O0O1N3O1N2N2O000O1O0O20000000000O1000001OO1O10000000000001000O000000001O1O00000000000O1000000000010N100N2O1O100O1O2O1O000O1O10001O2N1O3L2O1O1O1O1N1O101O1O1O1I6N2O1L4K5L3M5M2O1L5XOh0M3E<M2BjAdN[>Y1<M2N2mNXAKLe0e?H3Hmgn2"
+      },
+      "area": 18782.0,
+      "bbox": [
+        198.0,
+        171.0,
+        135.0,
+        172.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

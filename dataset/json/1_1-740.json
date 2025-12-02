@@ -1,0 +1,27 @@
+{
+  "image": "1_1-740.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[Se0f0^?<C7J7J5L5J6J5J7I6K5J6J6L4O1O100O1002N2N<C3N2N3M3M3M8H7H2N2N2N2O0O2N2N1O1O1O100O001O1O1O001O1O1O001O0010O01O00001O001O001O0O10000O100O10000O101N100O1O100O100O100O1O100O100O1O2O0O100O100O1O100O2O0O100O1O2O0O100O1O2N1O10fnj5"
+      },
+      "area": 4560.0,
+      "bbox": [
+        41.0,
+        246.0,
+        110.0,
+        188.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

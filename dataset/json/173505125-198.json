@@ -1,0 +1,67 @@
+{
+  "image": "173505125-198.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "PP^37Q`0O100O100NbPg4"
+      },
+      "area": 32.0,
+      "bbox": [
+        216.0,
+        320.0,
+        6.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "e`T22T`02M3N2O100O1O100O2N1O100O1O100O1O1O2N1O1O1O1O1O1O1O11O001O001O001O1O001O001O001O0000000000001O00000001O000001O000000001O000000001O001O001O001O001O1O001O1O001O2N3M2N3NVlh4"
+      },
+      "area": 1585.0,
+      "bbox": [
+        134.0,
+        459.0,
+        84.0,
+        32.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hbf42T`02N20000Tn^3"
+      },
+      "area": 24.0,
+      "bbox": [
+        296.0,
+        276.0,
+        5.0,
+        6.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

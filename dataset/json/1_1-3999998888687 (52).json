@@ -1,0 +1,247 @@
+{
+  "image": "1_1-3999998888687 (52).bmp",
+  "width": 400,
+  "height": 400,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "[T8k0k:l0O1O2N1O1OO1O1O1O1O1O1O1O1O1O001O1O1O1O1O1O3M4L3M3M3M2N1O2N1O1O1O00000000000000000000O1000000O100000000O12N3C[Wn3"
+      },
+      "area": 1943.0,
+      "bbox": [
+        20.0,
+        305.0,
+        56.0,
+        64.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "`SX23\\<2M201N2O0000O2NTd`2"
+      },
+      "area": 69.0,
+      "bbox": [
+        184.0,
+        236.0,
+        9.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "QjW25Z<2O0O1000O1O1NSZa2"
+      },
+      "area": 52.0,
+      "bbox": [
+        183.0,
+        335.0,
+        8.0,
+        8.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "Zfh02[<2N3M2N3M3M2O001O001O1O0O1O100O1O10N4L3N5J7Idcj3"
+      },
+      "area": 359.0,
+      "bbox": [
+        63.0,
+        43.0,
+        23.0,
+        49.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "aUU12\\<1_O4]DNb;a0O000O101O0OO2F;M3N2N2N2O1O0OaR`3"
+      },
+      "area": 224.0,
+      "bbox": [
+        95.0,
+        33.0,
+        18.0,
+        34.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "WZ_11]<2N200O100O010O010O010OO3MS_W3"
+      },
+      "area": 69.0,
+      "bbox": [
+        121.0,
+        46.0,
+        14.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "jff11_<001O1O001O001O1O001O000000000000N2N2NXgm2"
+      },
+      "area": 93.0,
+      "bbox": [
+        140.0,
+        26.0,
+        20.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "VTk03Y<6N0000000012Jnom3"
+      },
+      "area": 62.0,
+      "bbox": [
+        69.0,
+        178.0,
+        8.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "VUf11]<4N2N000O22K\\[S3"
+      },
+      "area": 40.0,
+      "bbox": [
+        138.0,
+        259.0,
+        7.0,
+        9.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 10,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "Q[^11^<3M3OO1O1O1O1NmhZ3"
+      },
+      "area": 31.0,
+      "bbox": [
+        118.0,
+        255.0,
+        8.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 11,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "gb]22\\<110O100O1000001OM`hZ2"
+      },
+      "area": 40.0,
+      "bbox": [
+        198.0,
+        243.0,
+        10.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 12,
+      "category_id": 1,
+      "category_name": "baiwu",
+      "segmentation": {
+        "size": [
+          400,
+          400
+        ],
+        "counts": "\\jc11_<2M2O0O2000NUfU3"
+      },
+      "area": 33.0,
+      "bbox": [
+        132.0,
+        266.0,
+        7.0,
+        8.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

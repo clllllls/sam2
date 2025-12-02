@@ -1,0 +1,107 @@
+{
+  "image": "1701673317(49).bmp",
+  "width": 520,
+  "height": 496,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          496,
+          520
+        ],
+        "counts": "g\\g21^?3N00001OO0NnRQ5"
+      },
+      "area": 24.0,
+      "bbox": [
+        180.0,
+        213.0,
+        7.0,
+        6.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          496,
+          520
+        ],
+        "counts": "ac`2:S?5N2M2N2O1N101N2N2O1N2O0O2N2O0O200O00100O1O001001O1N4M6J5E<E`Wl4"
+      },
+      "area": 905.0,
+      "bbox": [
+        166.0,
+        197.0,
+        31.0,
+        46.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          496,
+          520
+        ],
+        "counts": "S`X43Z?5L2M4M3N010O1O1O01O1O1O1O1O2N3L3NXeZ3"
+      },
+      "area": 248.0,
+      "bbox": [
+        281.0,
+        389.0,
+        18.0,
+        21.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          496,
+          520
+        ],
+        "counts": "cSU51^?2N2N10000011L`lb2"
+      },
+      "area": 37.0,
+      "bbox": [
+        340.0,
+        432.0,
+        8.0,
+        7.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          496,
+          520
+        ],
+        "counts": "eYU21]?20001N11O000001O0000001O01O010O1O010O0001O000000000000000000000000000000001O000000000000000000000000001O0000000000000000001OO1000O010000O10001O02O2NO010O10O02N4Loj^4"
+      },
+      "area": 470.0,
+      "bbox": [
+        143.0,
+        34.0,
+        82.0,
+        17.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

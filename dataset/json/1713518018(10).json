@@ -1,0 +1,27 @@
+{
+  "image": "1713518018(10).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "`XQ71V`03L3N3M2M2O1O1N2QOGmA;T>l00009H:E2O1N1O2O1N1OZOTVl0"
+      },
+      "area": 831.0,
+      "bbox": [
+        443.0,
+        270.0,
+        21.0,
+        79.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

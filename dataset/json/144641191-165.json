@@ -1,0 +1,107 @@
+{
+  "image": "144641191-165.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "QT_73k?;@?O1N1L40N2I6O0E=1N1O11O01001DY@N3Njj`0"
+      },
+      "area": 347.0,
+      "bbox": [
+        470.0,
+        419.0,
+        17.0,
+        50.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "g]>3Q`041O001O01OO100000000000O100000001O00001O001OO102Nj]\\7"
+      },
+      "area": 160.0,
+      "bbox": [
+        28.0,
+        211.0,
+        26.0,
+        10.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "zangwuqingwei",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hng02U`05]OLi@7T?Lh@7V?Lf@7X?=O1O1O100000000000O10000O10000Ei@DX?8m@GT?6PAHP?8QAER?:?O010O010O1O1O010M3LP[n6"
+      },
+      "area": 704.0,
+      "bbox": [
+        47.0,
+        74.0,
+        35.0,
+        32.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "xinpian",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_`j3f0k>f02O00000000000000000000000000000000000000001O000000000000000000000000000000000000000000nff3"
+      },
+      "area": 1893.0,
+      "bbox": [
+        241.0,
+        112.0,
+        45.0,
+        45.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "\\_]52U`03M3ON2O3MQag2"
+      },
+      "area": 28.0,
+      "bbox": [
+        341.0,
+        322.0,
+        6.0,
+        8.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

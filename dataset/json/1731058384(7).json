@@ -1,0 +1,107 @@
+{
+  "image": "1731058384(7).bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "alT1:n?1O001OO1O3Mfco6"
+      },
+      "area": 72.0,
+      "bbox": [
+        72.0,
+        337.0,
+        7.0,
+        12.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "posun",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "mdX21W`02N1O2N2N1O001O0O20O01OO1000000O1000000O10000O1000000O100O100O10000O100O100O100O10cRZ5"
+      },
+      "area": 299.0,
+      "bbox": [
+        143.0,
+        36.0,
+        42.0,
+        13.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "category_name": "anlie",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "oXd12S`03M3M3M3M3M3N2N2N2N1O001O1O0000N2O2M2O1O1O100O01O1O101N101O02N2N2M2M:GTbQ6"
+      },
+      "area": 739.0,
+      "bbox": [
+        102.0,
+        425.0,
+        36.0,
+        72.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "o\\W75S`05K001O00001O001O1O001O1O2N1O1O2N1O02N2N2N2N2N1O7Jn]c0"
+      },
+      "area": 382.0,
+      "bbox": [
+        455.0,
+        359.0,
+        26.0,
+        24.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "category_name": "zazhi",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "cjR74R`04M1O10O2N4MeeQ1"
+      },
+      "area": 51.0,
+      "bbox": [
+        446.0,
+        351.0,
+        7.0,
+        10.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

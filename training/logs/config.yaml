@@ -1,0 +1,87 @@
+trainer:
+  _target_: training.trainer.Trainer
+  data:
+    train:
+      _target_: training.dataset.vos_dataset.VOSDataset
+      root_dir: D:\\sam2-main\\dataset\\images
+      ann_dir: D:\\sam2-main\\dataset\\json
+      split: train
+      window_size: 1
+      mask_expansion_pix: 2
+      max_train_samples: 1000
+    val: null
+  model:
+    _target_: training.model.sam2_base.SAM2Base
+    image_encoder:
+      _target_: sam2.modeling.backbones.image_encoder.ImageEncoder
+      depth: 12
+      hidden_size: 768
+      mlp_ratio: 4.0
+      num_heads: 12
+      patch_size: 16
+      use_abs_pos: true
+      drop_rate: 0.0
+    prompt_encoder:
+      _target_: sam2.modeling.prompt_encoder.PromptEncoder
+      embedding_dim: 256
+      image_embedding_size:
+      - 64
+      - 64
+    mask_decoder:
+      _target_: sam2.modeling.mask_decoder.MaskDecoder
+      transformer_dim: 256
+      transformer:
+        depth: 2
+        heads: 8
+        mlp_ratio: 4.0
+      num_multimask_outputs: 3
+  logging:
+    log_dir: ./logs
+    log_freq: 100
+    tensorboard_writer:
+      _target_: torch.utils.tensorboard.SummaryWriter
+      log_dir: ./logs/tensorboard
+  checkpoint:
+    save_dir: ./checkpoints
+    save_freq: 5
+    save_list: []
+    resume_from: null
+  max_epochs: 50
+  mode: train
+  accelerator: cuda
+  seed_value: 42
+  val_epoch_freq: 1
+  distributed:
+    backend: nccl
+    find_unused_parameters: false
+  cuda:
+    cudnn_deterministic: false
+    cudnn_benchmark: true
+    allow_tf32: false
+  optim:
+    optimizer:
+      _target_: torch.optim.AdamW
+      lr: 0.0001
+      weight_decay: 0.0001
+    amp:
+      enabled: true
+      amp_dtype: float16
+  loss:
+    _target_: training.loss_fns.DiceCELoss
+    dice_weight: 1.0
+    ce_weight: 1.0
+    num_classes: 2
+launcher:
+  num_nodes: 1
+  gpus_per_node: 1
+  experiment_log_dir: ./logs
+submitit:
+  use_cluster: false
+  port_range:
+  - 10000
+  - 20000
+  timeout_min: 1440
+  gpus_per_task: 1
+  cpus_per_task: 8
+  mem_gb: 32
+  name: sam2-training

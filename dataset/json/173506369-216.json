@@ -1,0 +1,47 @@
+{
+  "image": "173506369-216.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[nk49o?001O00001O1O00001O0001O0001O000O10001O0000001O001O001O001O00001O1O00001O001O001O1O001O001O001O001O001O001O010O10O01O010O010O1O1O010O1O1O010O1O1O100O00100O1O010O100O100O00100O100O100O01000O1000000000001O0O10001N10O1001O000000000oH`NYOa1d0`N]Oa1a0_N@a1>`NC`1:bNG^17cNJ^13bNO^1ObN3^1JdN7]1FcN<]1BcN`0^1\\OcNf0^1VOcNl0]1QOeNP1\\1lNeNU1]1fNeN\\1[1aNfNa1[1[NfNg1[1TNfNn1\\1nMeNT2\\1hMeNY2^1cMbN_2_1\\McNe2_1WMbNk2_1QMbNP3`1kLaNX3a1bLaN_3a1]L`Nd3b1WL_Nl3b1lKcNU4_1fKcN\\4]1aKdN`4^1\\KbNg4a1RKaNo4c1kJ]NX5f1bJ[N_5j1WJZNk5Q2bIUN`6Q2UIRNl6R2jHRNY7Q2VH[Nk7k1bGaN`8b41N3N1O2M2N2N3M2N3N1N2N3N1N3N1N3N2M3N2M3N2M4M2M5J5L3L7H;_Od0mNS1VNkR="
+      },
+      "area": 13552.0,
+      "bbox": [
+        307.0,
+        51.0,
+        187.0,
+        332.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "[n`05S`00000000000O2NeQc7"
+      },
+      "area": 36.0,
+      "bbox": [
+        33.0,
+        195.0,
+        8.0,
+        5.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

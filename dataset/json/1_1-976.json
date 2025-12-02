@@ -1,0 +1,47 @@
+{
+  "image": "1_1-976.bmp",
+  "width": 520,
+  "height": 520,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "yijiao",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "hkb62V`02M3N2M3M3N1N3O000[G^Ob1c0[N^Og1c0UN_Ol1a0QNAP2`0lMAU2a0gMAZ2a0bM_O`2b0\\M@e2b0VM@j2c0QM^OQ3c0kL_OV3c0fL^OZ3d0bL]O`3e0[L]Of3e0UL\\Om3f0nK[OS4h0hKZOY4i0`KYOb4i0VK\\Ok4f0nJ]OS5f0eJ^O]5e0ZJ^Oi5e0mI@V6c0_IBc6b0RICQ7?`HJc7f0]GHf8k32N3L3N3M2M4M3M3L4M3L4L4L4L4L4M4K4M4K4M4L3L4M3L4L4K5K5K5K5K7H7I7H9H8E=B=CkP`0"
+      },
+      "area": 6878.0,
+      "bbox": [
+        415.0,
+        124.0,
+        73.0,
+        247.0
+      ],
+      "iscrowd": 0
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "category_name": "zangwuyanzhong",
+      "segmentation": {
+        "size": [
+          520,
+          520
+        ],
+        "counts": "_g^36Q`02O00000001Njhe4"
+      },
+      "area": 52.0,
+      "bbox": [
+        218.0,
+        30.0,
+        7.0,
+        8.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}

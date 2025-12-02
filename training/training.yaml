@@ -1,0 +1,28 @@
+data:
+  train:
+    _target_: training.dataset.sam2_datasets.TorchTrainMixedDataset 
+    phases_per_epoch: 4  # 将epoch分为4个阶段，适合中等规模数据集
+    batch_sizes: # 只保留一个批次大小
+    - 4  # 针对3060 12G显存的批次大小
+    datasets:
+    # 只保留SA1B图像数据集
+    - _target_: training.dataset.vos_dataset.VOSDataset
+      training: true
+      video_dataset:
+        _target_: training.dataset.vos_raw_dataset.SA1BRawDataset
+        img_folder: ../dataset/images  # 相对路径，与配置文件同目录
+        gt_folder: ../dataset/json     # 相对路径，与配置文件同目录
+        file_list_txt: null  # 不使用文件列表
+      sampler:
+        _target_: training.dataset.vos_sampler.RandomUniformSampler
+        num_frames: 1
+        max_num_objects: 5  # 图像目标上限设为5
+      transforms: ${image_transforms}
+    shuffle: True
+    num_workers: 8  # 16核心CPU，设为8个worker
+    pin_memory: True
+    drop_last: True
+    collate_fn:
+      _target_: training.utils.data_utils.collate_fn
+      _partial_: true
+      dict_key: all

@@ -1,0 +1,27 @@
+{
+  "image": "1701673317(75).bmp",
+  "width": 520,
+  "height": 518,
+  "annotations": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "category_name": "jiaotifabai",
+      "segmentation": {
+        "size": [
+          518,
+          520
+        ],
+        "counts": "Yid32S`04M0O1O2N100O2N101O00001O0O10000000000O100000000O10000000000O0100000O1000O10O1000000O0100000O1000O10O1000000O0100000O1000O10O1000000O0100000O1000O10O10000O10O1000O01000O10O1000O01000O11N101O0O2O001O0O2O00bUn2"
+      },
+      "area": 1887.0,
+      "bbox": [
+        230.0,
+        427.0,
+        103.0,
+        35.0
+      ],
+      "iscrowd": 0
+    }
+  ]
+}
