@@ -9,3 +9,13 @@ _C.*
 outputs/*
 checkpoints/*.pt
 demo/backend/checkpoints/*.pt
+# 忽略PyTorch模型文件
+*.pt
+*.pth
+*.bin
+
+# 忽略大型检查点和数据文件
+checkpoint*/
+temp_*/
+*.tar.gz
+*.zip
